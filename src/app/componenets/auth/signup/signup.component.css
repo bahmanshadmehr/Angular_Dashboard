@@ -1,0 +1,21 @@
+.text_right{
+    text-align: right;
+}
+
+.text_left{
+    text-align: left;
+}
+
+.signup_input_icon_en{
+    left: 5px;
+    border-left: none;
+    border-right: solid 1px;
+}
+
+.ltr_dir{
+    direction: ltr;
+}
+
+.rtl_dir{
+    direction: rtl;
+}

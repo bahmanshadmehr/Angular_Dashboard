@@ -1,0 +1,123 @@
+<body>
+
+
+    <div class="padding-15">
+
+        <div class="login-box">
+
+            <!--
+            <div class="alert alert-danger">Complete all fields!</div>
+            -->
+
+            <!-- registration form -->
+            <form action="index.html" method="post" class="sky-form boxed" align="left">
+                <header [class.text_right]="language=='fa'" [class.text_left]="language=='en'"
+                    [class.rtl_dir]="language=='fa'" [class.ltr_dir]="language=='en'"><i class="fa fa-users"></i> یک
+                    حساب کاربری جدید ایجاد کنید <small class="note bold"></small>
+                </header>
+
+                <fieldset>
+                    <label class="input">
+                        <i class="icon-append fa fa-envelope" [class.signup_input_icon_en]="language=='en'"></i>
+                        <input type="text" [class.text_right]="language=='fa'" [class.text_left]="language=='en'"
+                            style="padding: 0 45px;" placeholder="آدرس ایمیل خود را وارد کنید">
+                        <b class="tooltip tooltip-bottom-right">یک ایمیل معتبر را وارد کنید زیرا برای تایید شدن حساب
+                            کاربریتان به آن نیاز دارید.</b>
+                    </label>
+
+                    <label class="input">
+                        <i class="icon-append fa fa-lock" [class.signup_input_icon_en]="language=='en'"></i>
+                        <input type="password" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" style="padding: 0 45px;" placeholder="رمز عبوری را انتخاب کنید">
+                        <b class="tooltip tooltip-bottom-right">تنها حروف انگلیسی به همراه اعداد قابل قبول هستند</b>
+                    </label>
+
+                    <label class="input">
+                        <i class="icon-append fa fa-lock" [class.signup_input_icon_en]="language=='en'"></i>
+                        <input type="password" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" style="padding: 0 45px;" placeholder="رمز عبور خود را تکرار کنید">
+                        <b class="tooltip tooltip-bottom-right">دقت داشته باشید که گذرواژه را به درستی تکرار کنید</b>
+                    </label>
+                </fieldset>
+
+                <fieldset>
+                    <div class="row">
+                        <div class="col-md-6">
+                            <label class="input">
+                                <input type="text" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" placeholder="نام کاربری">
+                            </label>
+                        </div>
+                        <div class="col-md-6">
+                            <label class="input">
+                                <input type="text" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" placeholder="نام و نام خانوادگی">
+                            </label>
+                        </div>
+                    </div>
+
+                    <label class="select">
+                        <select style="padding-right: 50px;">
+                            <option value="0" selected disabled>جنسیت</option>
+                            <option value="1">مرد</option>
+                            <option value="2">زن</option>
+                            <option value="3">سایر</option>
+                        </select>
+                        <i></i>
+                    </label>
+
+                    <div class="margin-top20">
+                        <label style="padding-right: 0;" class="checkbox nomargin"><input class="checked-agree"
+                                type="checkbox" name="checkbox" [(ngModel)]="accepted_terms"><i></i>من با قوانین سایت
+                            موافقم <a href="#" data-toggle="modal" data-target="#termsModal">مطالعه</a></label>
+                        <label class="checkbox nomargin"><input style="padding-left: 0;" type="checkbox"
+                                name="checkbox"><i></i>عضویت در خبرنامه
+                            سایت را میپذریم</label>
+                    </div>
+                </fieldset>
+
+                <footer>
+                    <button type="submit" class="btn btn-primary" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'"><i class="fa fa-check"></i> ساخت حساب
+                        کاربری</button>
+                </footer>
+
+            </form>
+            <!-- /registration form -->
+
+        </div>
+
+    </div>
+
+
+    <!-- MODAL -->
+    <div class="modal fade" id="termsModal" tabindex="-1" role="dialog" aria-labelledby="myModal" aria-hidden="true">
+        <div class="modal-dialog" dir="rtl">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
+                        &times;
+                    </button>
+                    <h4 class="modal-title" id="myModal">موافقت نامه کاربری</h4>
+                </div>
+
+                <div class="modal-body modal-terms">
+                    <h4><b>Introduction</b></h4>
+                    <p>These terms and conditions govern your use of this website; by using this website, you accept
+                        these terms and conditions in full. If you disagree with these terms and conditions or any part
+                        of these terms and conditions, you must not use this website.</p>
+                    <p>[You must be at least [18] years of age to use this website. By using this website [and by
+                        agreeing to these terms and conditions] you warrant and represent that you are at least [18]
+                        years of age.]</p>
+
+                </div>
+
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" style="margin: 0 10px;"
+                        data-dismiss="modal">انصراف</button>
+                    <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="acceptTerms()"><i
+                            class="fa fa-check"></i> پذیرش
+                        قوانین</button>
+                </div>
+
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- /MODAL -->
+
+</body>

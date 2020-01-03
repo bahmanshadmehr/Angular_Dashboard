@@ -1,0 +1,12 @@
+.direction_rtl{
+    direction: rtl;
+}
+
+.direction_ltr{
+    direction: ltr;
+}
+
+.sub_menu_li_fa{
+    direction: rtl;
+    text-align: right;
+}

@@ -1,0 +1,177 @@
+<body>
+
+
+    <!-- WRAPPER -->
+    <div id="wrapper" class="{{language=='fa' ? 'wrapperFa' : ''}}">
+
+        <!-- 
+            ASIDE 
+            Keep it outside of #wrapper (responsive purpose)
+        -->
+        <aside id="aside" class="{{language=='fa' ? 'asideFa' : ''}}">
+            <!--
+                Always open:
+                <li class="active alays-open">
+
+                LABELS:
+                    <span class="label label-danger pull-right">1</span>
+                    <span class="label label-default pull-right">1</span>
+                    <span class="label label-warning pull-right">1</span>
+                    <span class="label label-success pull-right">1</span>
+                    <span class="label label-info pull-right">1</span>
+            -->
+            <nav id="sideNav">
+                <!-- MAIN MENU -->
+                <ul class="nav nav-list">
+                    <li class="active">
+                        <!-- dashboard -->
+                        <a class="dashboard" href="index.html">
+                            <!-- warning - url used by default by ajax (if eneabled) -->
+                            <i class="main-icon fa fa-dashboard"></i> <span [class.pull-right]="language=='fa'"
+                                [class.pull-left]="language=='en'">داشبورد</span>
+                        </a>
+                    </li>
+                    <li class="active">
+                        <a href="#">
+                            <i class="fa fa-menu-arrow" [class.pull-right]="language=='en'"
+                                [class.pull-left]="language=='fa'"></i>
+                            <i class="main-icon fa fa-book"></i> <span [class.pull-right]="language=='fa'"
+                                [class.pull-left]="language=='en'">صفحات</span>
+                        </a>
+                        <ul [class.sub_menu_li_fa]="language=='fa'">
+                            <!-- submenus -->
+                            <li><a href="page-invoice.html">صورت حساب</a></li>
+                            <li><a href="page-login.html">ورود</a></li>
+                            <li><a href="page-register.html">ثبت نام</a></li>
+                            <li><a href="page-lock.html">قفل صفحه</a></li>
+                            <li><a href="page-forum.html">انجمن</a></li>
+                            <li><a href="page-404.html">خطای 404</a></li>
+                            <li><a href="page-500.html">خطای 500</a></li>
+                            <li><a href="page-pricing.html">جدول قیمت ها</a></li>
+                            <li><a href="page-search.html">نتایج جستجو</a></li>
+                            <li><a href="page-sidebar.html">صفحه سایدبار</a></li>
+                            <li><a href="page-user-profile.html">پروفایل کاربری</a></li>
+                            <li class="active"><a href="page-blank-1.html">صفحه خالی و آزاد</a></li>
+                        </ul>
+                    </li>
+                </ul>
+
+                <!-- SECOND MAIN LIST -->
+                <h3 [class.sub_menu_li_fa]="language=='fa'">دیگر قسمت ها</h3>
+                <ul class="nav nav-list">
+                    <li>
+                        <a href="calendar.html">
+                            <i class="main-icon fa fa-calendar"></i>
+                            <span class="label label-warning" [class.pull-right]="language=='en'"
+                                [class.pull-left]="language=='fa'">3 رویداد</span> <span
+                                [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'">تقویم</span>
+                        </a>
+                    </li>
+                </ul>
+
+            </nav>
+
+            <span id="asidebg" class="{{language=='fa' ? 'asideFabg' : '' }}">
+                <!-- aside fixed background --></span>
+        </aside>
+        <!-- /ASIDE -->
+
+
+        <!-- HEADER -->
+        <header id="header" class="{{language=='fa' ? 'headerFa' : '' }}">
+
+            <!-- Mobile Button -->
+            <button id="mobileMenuBtn" class="{{language=='fa' ? 'mobileMenuBtnFa' : '' }}"></button>
+
+            <!-- Logo -->
+            <span style="margin: 0 30px;;" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'">
+                <img src="assets/images/logo_light.png" alt="admin panel" height="35" />
+            </span>
+
+            <form method="get" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'"
+                action="page-search.html" class="search hidden-xs">
+                <input type="text" class="form-control" style="direction: rtl;" name="k"
+                    placeholder="جستجو در سایت ..." />
+            </form>
+
+            <nav>
+
+                <!-- OPTIONS LIST -->
+                <ul class="nav" [class.pull-left]="language=='fa'" [class.pull-right]="language=='en'">
+
+                    <!-- USER OPTIONS -->
+                    <li class="dropdown pull-left">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
+                            data-close-others="true">
+                            <img class="user-avatar" alt="" src="assets/images/noavatar.jpg" height="34" />
+                            <span class="user-name">
+                                <span class="hidden-xs">
+                                    کاربر ادمین <i class="fa fa-angle-down"></i>
+                                </span>
+                            </span>
+                        </a>
+                        <ul class="dropdown-menu hold-on-click">
+                            <li>
+                                <!-- my calendar -->
+                                <a href="calendar.html"><i class="fa fa-calendar"></i> تقویم کاربری</a>
+                            </li>
+                            <li>
+                                <!-- my inbox -->
+                                <a href="#"><i class="fa fa-envelope"></i> صندوق ورودی
+                                    <span class="pull-right label label-default">10</span>
+                                </a>
+                            </li>
+                            <li>
+                                <!-- settings -->
+                                <a href="page-user-profile.html"><i class="fa fa-cogs"></i> تنظیمات</a>
+                            </li>
+
+                            <li class="divider"></li>
+
+                            <li>
+                                <!-- lockscreen -->
+                                <a href="page-lock.html"><i class="fa fa-lock"></i> قفل صفحه</a>
+                            </li>
+                            <li>
+                                <!-- logout -->
+                                <a href="page-login.html"><i class="fa fa-power-off"></i> خروج</a>
+                            </li>
+                        </ul>
+                    </li>
+                    <!-- /USER OPTIONS -->
+
+                </ul>
+                <!-- /OPTIONS LIST -->
+
+            </nav>
+
+        </header>
+        <!-- /HEADER -->
+
+
+        <!-- 
+            MIDDLE 
+        -->
+        <section id="middle" class="{{language=='fa' ? 'middleFa' : '' }}">
+
+
+            <!-- page title -->
+            <header id="page-header" [class.direction_rtl]="language=='fa'" [class.direction_ltr]="language=='en'">
+                <h1>صفحه خالی و آزاد</h1>
+                <ol class="breadcrumb">
+                    <li><a href="#">صفحات</a></li>
+                    <li class="active">صفحه خالی و آزاد</li>
+                </ol>
+            </header>
+            <!-- /page title -->
+
+
+            <div id="content" class="padding-20" [class.direction_rtl]="language=='fa'"
+                [class.direction_ltr]="language=='en'">
+            </div>
+        </section>
+        <!-- /MIDDLE -->
+
+    </div>
+
+</body>

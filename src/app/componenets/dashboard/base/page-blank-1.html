@@ -1,0 +1,354 @@
+<!doctype html>
+<html lang="en-US">
+	<head>
+		<meta charset="utf-8" />
+		<meta http-equiv="Content-type" content="text/html; charset=utf-8" />
+		<title>صفحه خالی و آزاد</title>
+		<meta name="description" content="" />
+		<meta name="Author" content="Dorin Grigoras [www.stepofweb.com]" />
+
+		<!-- mobile settings -->
+		<meta name="viewport" content="width=device-width, maximum-scale=1, initial-scale=1, user-scalable=0" />
+
+		<!-- WEB FONTS -->
+		<link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,700,800&amp;subset=latin,latin-ext,cyrillic,cyrillic-ext" rel="stylesheet" type="text/css" />
+
+		<!-- CORE CSS -->
+		<link href="assets/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
+		
+		<!-- THEME CSS -->
+		<link href="assets/css/essentials.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/layout.css" rel="stylesheet" type="text/css" />
+		<link href="assets/css/color_scheme/green.css" rel="stylesheet" type="text/css" id="color_scheme" />
+		<link href="assets/plugins/bootstrap/RTL/bootstrap-rtl.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/plugins/bootstrap/RTL/bootstrap-flipped.min.css" rel="stylesheet" type="text/css" />
+        <link href="assets/css/layout-RTL.css" rel="stylesheet" type="text/css" />
+
+	</head>
+	<!--
+		.boxed = boxed version
+	-->
+	<body>
+
+
+		<!-- WRAPPER -->
+		<div id="wrapper">
+
+			<!-- 
+				ASIDE 
+				Keep it outside of #wrapper (responsive purpose)
+			-->
+			<aside id="aside">
+				<!--
+					Always open:
+					<li class="active alays-open">
+
+					LABELS:
+						<span class="label label-danger pull-right">1</span>
+						<span class="label label-default pull-right">1</span>
+						<span class="label label-warning pull-right">1</span>
+						<span class="label label-success pull-right">1</span>
+						<span class="label label-info pull-right">1</span>
+				-->
+				<nav id="sideNav"><!-- MAIN MENU -->
+					<ul class="nav nav-list">
+						<li class="active"><!-- dashboard -->
+							<a class="dashboard" href="index.html"><!-- warning - url used by default by ajax (if eneabled) -->
+								<i class="main-icon fa fa-dashboard"></i> <span>داشبورد</span>
+							</a>
+						</li>
+						<li class="active">
+							<a href="#">
+								<i class="fa fa-menu-arrow pull-right"></i>
+								<i class="main-icon fa fa-book"></i> <span>صفحات</span>
+							</a>
+							<ul><!-- submenus -->
+								<li><a href="page-invoice.html">صورت حساب</a></li>
+								<li><a href="page-login.html">ورود</a></li>
+								<li><a href="page-register.html">ثبت نام</a></li>
+								<li><a href="page-lock.html">قفل صفحه</a></li>
+								<li><a href="page-forum.html">انجمن</a></li>
+								<li><a href="page-404.html">خطای 404</a></li>
+								<li><a href="page-500.html">خطای 500</a></li>
+								<li><a href="page-pricing.html">جدول قیمت ها</a></li>
+								<li><a href="page-search.html">نتایج جستجو</a></li>
+								<li><a href="page-sidebar.html">صفحه سایدبار</a></li>
+								<li><a href="page-user-profile.html">پروفایل کاربری</a></li>
+								<li class="active"><a href="page-blank-1.html">صفحه خالی و آزاد</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-menu-arrow pull-right"></i>
+								<i class="main-icon fa fa-bar-chart-o"></i> <span>نمودارها</span>
+							</a>
+							<ul><!-- submenus -->
+								<li><a href="graphs-flot.html">نمودار طرح 1</a></li>
+								<li><a href="graphs-morris.html">نمودار طرح 2</a></li>
+								<li><a href="graphs-inline.html">نمودار طرح 3</a></li>
+								<li><a href="graphs-chartjs.html">Chart.js</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-menu-arrow pull-right"></i>
+								<i class="main-icon fa fa-table"></i> <span>جدول ها</span>
+							</a>
+							<ul><!-- submenus -->
+								<li><a href="tables-bootstrap.html">جدول های بوت استرپ</a></li>
+								<li><a href="tables-jqgrid.html">jQuery Grid</a></li>
+								<li><a href="tables-footable.html">jQuery Footable</a></li>
+								<li>
+									<a href="#">
+										<i class="fa fa-menu-arrow pull-right"></i>
+										پایگاه داده
+									</a>
+									<ul>
+										<li><a href="tables-datatable-managed.html">داده های مدیریت شده</a></li>
+										<li><a href="tables-datatable-editable.html">داده های قابل ویرایش</a></li>
+										<li><a href="tables-datatable-advanced.html">داده های پیشرفته</a></li>
+									</ul>
+								</li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-menu-arrow pull-right"></i>
+								<i class="main-icon fa fa-pencil-square-o"></i> <span>فرم ها</span>
+							</a>
+							<ul><!-- submenus -->
+								<li><a href="form-elements.html">عناصر هوشمند</a></li>
+								<li><a href="form-masked-inputs.html">ورودی های پوشیده شده</a></li>
+								<li><a href="form-pickers.html">جمع کننده ها</a></li>
+								<li><a href="form-ui-sliders.html">اسلایدر ها - UI</a></li>
+								<li><a href="form-validation.html">فرم تایید</a></li>
+								<li><a href="form-html-editors.html">ویرایش کننده HTML</a></li>
+								<li><a href="form-autosuggest.html">نمایش خودکار</a></li>
+								<li><a href="form-x-editable.html">فرم های X-Editable</a></li>
+								<li><a href="form-dropzone.html">آپلود فایل با کشیدن</a></li>
+							</ul>
+						</li>
+						<li>
+							<a href="#">
+								<i class="fa fa-menu-arrow pull-right"></i>
+								<i class="main-icon fa fa-gears"></i> <span>ویژگی های رابط کاربری</span>
+							</a>
+							<ul><!-- submenus -->
+								<li><a href="ui-portlets.html">دریافت کننده دیدگاه</a></li>
+								<li><a href="ui-buttons.html">دکمه ها و کلید ها</a></li>
+								<li>
+									<a href="#">
+										<i class="fa fa-menu-arrow pull-right"></i>
+										آیکون ها
+									</a>
+									<ul>
+										<li><a href="ui-icons-fontawsome.html">آیکون های : Fontawsome</a></li>
+										<li><a href="ui-icons-etline.html">آیکون های : Et-Line Icons</a></li>
+										<li><a href="ui-icons-glyphicons.html">آیکون های : Glyph Icons</a></li>
+										<li><a href="ui-icons-flags.html">پرچم کشورها</a></li>
+									</ul>
+								</li>
+								<li><a href="ui-alerts-dialogs.html">اعلان ها و گفتگوها</a></li>
+								<li><a href="ui-tabs-acordion-navs.html">دیگر برگه ها</a></li>
+								<li><a href="ui-knob.html">دایره های نمودار</a></li>
+								<li><a href="ui-nestable.html">جداول زیرمجموعه ای</a></li>
+								<li><a href="ui-toastr.html">دیگر کلیدها 1</a></li>
+								<li><a href="ui-modals.html">دیگر کلیدها 2</a></li>
+								<li><a href="ui-grid.html">دیگر کلیدها 3</a></li>
+								<li><a href="ui-google-maps.html">نقشه گوگل</a></li>
+								<li><a href="ui-vector-maps.html">نقشه وکتور</a></li>
+								<li><a href="ui-essentials.html">دیگر توابع</a></li>
+								<li>
+									<a href="#">
+										<i class="fa fa-menu-arrow pull-right"></i>
+										<i class="fa fa-folder-open"></i>
+										طرح زیرمجموعه های سایدبار
+									</a>
+									<!-- 3rd Level -->
+									<ul>
+										<li>
+											<a href="#">
+												3rd Level
+											</a>
+										</li>
+										<li>
+											<a href="#">
+												<i class="fa fa-menu-arrow pull-right"></i>
+												<i class="fa fa-folder-open"></i>
+												4rd Level
+											</a>
+											<!-- 4th Level -->
+											<ul>
+												<li>
+													<a href="#">
+														4th Level
+													</a>
+												</li>
+												<li>
+													<a href="#">
+														<i class="fa fa-menu-arrow pull-right"></i>
+														<i class="fa fa-folder-open"></i>
+														5th Level
+													</a>
+													<!-- 5th Level -->
+													<ul>
+														<li>
+															<a href="#">
+																5th level
+															</a>
+														</li>
+														<li>
+															<a href="#">
+																<i class="fa fa-menu-arrow pull-right"></i>
+																<i class="fa fa-folder-open"></i>
+																6th level
+															</a>
+															<!-- 6th Level -->
+															<ul>
+																<li>
+																	<a href="#">
+																		6th level
+																	</a>
+																</li>
+																<li>
+																	<a href="#">
+																		6th level
+																	</a>
+																</li>
+															</ul><!-- /6th Level -->
+														</li>
+													</ul><!-- /5th Level -->
+												</li>
+											</ul><!-- /4th Level -->
+										</li>
+									</ul><!-- /3rd Level -->
+								</li>
+							</ul>
+						</li>
+					</ul>
+
+					<!-- SECOND MAIN LIST -->
+					<h3>دیگر قسمت ها</h3>
+					<ul class="nav nav-list">
+						<li>
+							<a href="calendar.html">
+								<i class="main-icon fa fa-calendar"></i>
+								<span class="label label-warning pull-right">3 رویداد</span> <span>تقویم</span>
+							</a>
+						</li>
+						<li>
+							<a href="../../HTML/start.html">
+								<i class="main-icon fa fa-link"></i>
+								<span class="label label-danger pull-right">خانه</span> <span>مجموعه قالب ها</span>
+							</a>
+						</li>
+					</ul>
+
+				</nav>
+
+				<span id="asidebg"><!-- aside fixed background --></span>
+			</aside>
+			<!-- /ASIDE -->
+
+
+			<!-- HEADER -->
+			<header id="header">
+
+				<!-- Mobile Button -->
+				<button id="mobileMenuBtn"></button>
+
+				<!-- Logo -->
+				<span class="logo pull-left">
+					<img src="assets/images/logo_light.png" alt="admin panel" height="35" />
+				</span>
+
+				<form method="get" action="page-search.html" class="search pull-left hidden-xs">
+					<input type="text" class="form-control" name="k" placeholder="جستجو در سایت ..." />
+				</form>
+
+				<nav>
+
+					<!-- OPTIONS LIST -->
+					<ul class="nav pull-right">
+
+						<!-- USER OPTIONS -->
+						<li class="dropdown pull-left">
+							<a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown" data-close-others="true">
+								<img class="user-avatar" alt="" src="assets/images/noavatar.jpg" height="34" /> 
+								<span class="user-name">
+									<span class="hidden-xs">
+										کاربر ادمین <i class="fa fa-angle-down"></i>
+									</span>
+								</span>
+							</a>
+							<ul class="dropdown-menu hold-on-click">
+								<li><!-- my calendar -->
+									<a href="calendar.html"><i class="fa fa-calendar"></i> تقویم کاربری</a>
+								</li>
+								<li><!-- my inbox -->
+									<a href="#"><i class="fa fa-envelope"></i> صندوق ورودی
+										<span class="pull-right label label-default">10</span>
+									</a>
+								</li>
+								<li><!-- settings -->
+									<a href="page-user-profile.html"><i class="fa fa-cogs"></i> تنظیمات</a>
+								</li>
+
+								<li class="divider"></li>
+
+								<li><!-- lockscreen -->
+									<a href="page-lock.html"><i class="fa fa-lock"></i> قفل صفحه</a>
+								</li>
+								<li><!-- logout -->
+									<a href="page-login.html"><i class="fa fa-power-off"></i> خروج</a>
+								</li>
+							</ul>
+						</li>
+						<!-- /USER OPTIONS -->
+
+					</ul>
+					<!-- /OPTIONS LIST -->
+
+				</nav>
+
+			</header>
+			<!-- /HEADER -->
+
+
+			<!-- 
+				MIDDLE 
+			-->
+			<section id="middle">
+
+
+				<!-- page title -->
+				<header id="page-header">
+					<h1>صفحه خالی و آزاد</h1>
+					<ol class="breadcrumb">
+						<li><a href="#">صفحات</a></li>
+						<li class="active">صفحه خالی و آزاد</li>
+					</ol>
+				</header>
+				<!-- /page title -->
+
+
+				<div id="content" class="padding-20">
+
+					هر اطلاعاتی اعم از متن و کد را میتوانید در این صفحه وارد کنید تا به هر شکلی که شما میخواهید در بیاید!
+
+				</div>
+			</section>
+			<!-- /MIDDLE -->
+
+		</div>
+
+
+
+	
+		<!-- JAVASCRIPT FILES -->
+		<script type="text/javascript">var plugin_path = 'assets/plugins/';</script>
+		<script type="text/javascript" src="assets/plugins/jquery/jquery-2.1.4.min.js"></script>
+		<script type="text/javascript" src="assets/js/app.js"></script>
+
+	</body>
+</html>

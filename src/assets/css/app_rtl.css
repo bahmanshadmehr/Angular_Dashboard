@@ -1,0 +1,165 @@
+/** RTL DEFAULTS
+*************************************************** **/
+input,
+select,
+textarea {
+	text-align:right;
+}
+
+
+/** Commons
+*************************************************** **/
+.btn>i { 
+	padding-right:0; 	
+	padding-left:6px; 	
+}
+ul>li>i { 
+	margin-right:0; 
+	margin-left:10px;
+}
+
+img.pull-left {
+  margin: 0 0 10px 20px;
+}
+img.pull-right {
+  margin: 0 20px 10px 0;
+}
+
+.btn>i {
+	padding-right:0;
+	padding-left:6px;
+}
+.toTop {
+	right:auto;
+	left:6px;
+}
+
+.showSwitcher {
+	left:auto;
+	right:0;
+}
+
+
+/**	Header
+*************************************************** **/
+.headerFa .logo {
+    margin-left: 0 !important;
+    margin-right: 15px !important;
+}
+.headerFa nav .dropdown-menu li a .fa {
+    margin-right: 0 !important;
+    margin-left: 6px !important;
+}
+
+.headerFa nav .dropdown-menu {
+	right: auto !important;
+	left: 0 !important;
+}
+body.min .headerFa {
+	margin-left:0 !important;
+}
+
+
+/**	Aside
+*************************************************** **/
+.asideFa nav a i.main-icon {
+	float:right !important;
+	margin: -12px -10px -12px 10px !important;
+}
+.asideFa nav a i.pull-right {
+	padding-left:0 !important;
+	padding-right:8px !important;
+}
+.asideFabg {
+    left: auto !important;
+    right: 0 !important;
+}
+.asideFa {
+    left: auto !important;
+    right: 0 !important;
+}
+.middleFa {
+	margin-left: 0 !important;
+	margin-right: 235px !important;
+}
+.mobileMenuBtnFa {
+	float:right !important;
+	border:0;
+	border-left: rgba(255,255,255,0.1) 1px solid;
+}
+body.min .wrapperFa {
+	padding-left:0 !important;
+}
+body.min .asideFa ul.nav>li:hover>ul {
+    left: auto !important;
+    right: 50px !important;
+	top:0px !important;
+}
+body.min .asideFa nav ul li ul > li {
+    padding-left: 0 !important;
+}
+body.min .asideFa nav ul li ul > li a {
+	height:40px !important;
+	line-height:1.8 !important;
+}
+.asideFa nav ul li ul li {
+    padding-left: 0 !important;
+    padding-right: 40px !important;
+}
+body.min .asideFa nav ul li ul li {
+	padding-right:0 !important;
+}
+.asideFa nav ul li ul:before {
+	left:auto !important;
+	right:20px !important;
+}
+.asideFa nav ul li ul li:before {
+	left:0 !important;
+	right:21px !important;
+}
+.asideFa nav ul li ul li ul {
+	margin-left:0 !important;
+}
+.asideFa nav ul li ul li ul:before {
+	left:auto !important;
+	right:50px !important;
+}
+.asideFa nav ul li ul li ul li:before {
+	right:13px !important;
+}
+
+body.min .asideFa ul.nav>li:hover:before {
+	right:50px !important;
+	border-left-color: transparent !important;
+	border-right-color: .5a6667 !important;
+}
+body.min .asideFa ul.nav>li:hover>a span {
+	left:auto !important;
+	right:50px !important;
+	padding-left: 0 !important;
+	padding-right: 20px !important;
+}
+
+@media only screen and (max-width: 768px) {
+	.asideFa,
+	.asideFabg {
+		margin-right:-235px !important;
+		margin-left:0 !important;
+	}
+	.middleFa {
+		margin-right: 0px !important;
+	}
+	
+	body.menu-open .asideFa,
+	body.menu-open .asideFabg {
+		margin-right:0 !important;
+	}
+
+}
+
+
+/**	Middle
+*************************************************** **/
+body.min .middleFa {
+	margin-right:50px !important;
+}
