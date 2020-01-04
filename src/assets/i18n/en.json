@@ -8,5 +8,27 @@
     "login_page_password_placeholer": "Please enter your password...",
     "login_page_login_button_text": "Login",
     "login_page_forgot_password_text": "Forgot your password?",
-    "login_page_register_text": "Register"
+    "login_page_register_text": "Register",
+
+
+    "signup_page_card_title": "Member Signup",
+    "signup_page_email_place_holder": "Your email address...",
+    "signup_page_email_tooltip": "Please enter a valid email address.",
+    "signup_page_password_placeolder": "Password...",
+    "signup_page_password_tooltip": "Please enter a valid password, including numbers and characters",
+    "signup_page_password_confirm_placeholder": "Password Confirm...",
+    "signup_page_password_confirm_tooltip": "Please repeat your password.",
+    "signup_page_username_placeholder": "Username",
+    "signup_page_full_name_placeholder": "Full name",
+    "signup_page_gender_field_gender_option": "Gender",
+    "signup_page_gender_field_male_option": "Male",
+    "signup_page_gender_field_female_option": "Female",
+    "signup_page_gender_field_other_option": "Other",
+    "signup_page_agree_to_the_terms_checkbox_text": "I agree with the terms",
+    "signup_page_read_the_terms_link_text": "TERMS",
+    "signup_page_submit_to_newsletter_checkbox_text": "Submit to newsletter",
+    "signup_page_register_button_text": "Register",
+    "signup_page_terms_popup_title": "Terms",
+    "signup_page_terms_popup_cancel_button_text": "Cancel",
+    "signup_page_terms_popup_agree_button_text": "Agree"
 }

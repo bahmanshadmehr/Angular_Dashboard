@@ -8,5 +8,27 @@
     "login_page_password_placeholer": "لطفا رمز عبور خود را وارد کنید.",
     "login_page_login_button_text": "ورود",
     "login_page_forgot_password_text": "رمز عبور را فراموش کرده اید؟",
-    "login_page_register_text": "ثبت نام کنید"
+    "login_page_register_text": "ثبت نام کنید",
+
+
+    "signup_page_card_title": "ثبت نام",
+    "signup_page_email_place_holder": "آدرس ایمیل...",
+    "signup_page_email_tooltip": "لطفا آدرس ایمیل خود را وارد کنید...",
+    "signup_page_password_placeolder": "رمز عبور...",
+    "signup_page_password_tooltip": "لطفا یک رمز عبور امن و معتبر، شامل حرف و عدد وارد کنید!",
+    "signup_page_password_confirm_placeholder": "تایید رمز عبور...",
+    "signup_page_password_confirm_tooltip": "لطفا رمز عبور خود را تکرار کنید...",
+    "signup_page_username_placeholder": "نام کاربری",
+    "signup_page_full_name_placeholder": "نام و نام خانوادگی",
+    "signup_page_gender_field_gender_option": "جنسیت",
+    "signup_page_gender_field_male_option": "مرد",
+    "signup_page_gender_field_female_option": "زن",
+    "signup_page_gender_field_other_option": "سایر",
+    "signup_page_agree_to_the_terms_checkbox_text": " با شرایط و قوانین موافق هستم",
+    "signup_page_read_the_terms_link_text": " مطالعه ",
+    "signup_page_submit_to_newsletter_checkbox_text": "ثبت نام در خبرنامه",
+    "signup_page_register_button_text": "ثبت نام",
+    "signup_page_terms_popup_title": "شرایط و قوانین",
+    "signup_page_terms_popup_cancel_button_text": "لغو",
+    "signup_page_terms_popup_agree_button_text": "تایید"
 }

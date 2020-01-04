@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-signup',
@@ -9,7 +10,7 @@ export class SignupComponent implements OnInit {
   language: string;
   accepted_terms: boolean;
 
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
     this.accepted_terms = false;

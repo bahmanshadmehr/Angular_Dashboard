@@ -11,30 +11,28 @@
 
             <!-- registration form -->
             <form action="index.html" method="post" class="sky-form boxed" align="left">
-                <header [class.text_right]="language=='fa'" [class.text_left]="language=='en'"
-                    [class.rtl_dir]="language=='fa'" [class.ltr_dir]="language=='en'"><i class="fa fa-users"></i> یک
-                    حساب کاربری جدید ایجاد کنید <small class="note bold"></small>
+                <header [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'"
+                    [class.rtl_dir]="translate.currentLang=='fa'" [class.ltr_dir]="translate.currentLang=='en'"><i class="fa fa-users"></i> {{ 'signup_page_card_title' | translate }}<small class="note bold"></small>
                 </header>
 
                 <fieldset>
                     <label class="input">
-                        <i class="icon-append fa fa-envelope" [class.signup_input_icon_en]="language=='en'"></i>
-                        <input type="text" [class.text_right]="language=='fa'" [class.text_left]="language=='en'"
-                            style="padding: 0 45px;" placeholder="آدرس ایمیل خود را وارد کنید">
-                        <b class="tooltip tooltip-bottom-right">یک ایمیل معتبر را وارد کنید زیرا برای تایید شدن حساب
-                            کاربریتان به آن نیاز دارید.</b>
+                        <i class="icon-append fa fa-envelope" [class.signup_input_icon_en]="translate.currentLang=='en'"></i>
+                        <input type="text" [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'"
+                            style="padding: 0 45px;" placeholder="{{ 'signup_page_email_place_holder' | translate }}">
+                        <b class="tooltip tooltip-bottom-right">{{ 'signup_page_email_tooltip' | translate }}</b>
                     </label>
 
                     <label class="input">
-                        <i class="icon-append fa fa-lock" [class.signup_input_icon_en]="language=='en'"></i>
-                        <input type="password" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" style="padding: 0 45px;" placeholder="رمز عبوری را انتخاب کنید">
-                        <b class="tooltip tooltip-bottom-right">تنها حروف انگلیسی به همراه اعداد قابل قبول هستند</b>
+                        <i class="icon-append fa fa-lock" [class.signup_input_icon_en]="translate.currentLang=='en'"></i>
+                        <input type="password" [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'" style="padding: 0 45px;" placeholder="{{ 'signup_page_password_placeolder' | translate }}">
+                        <b class="tooltip tooltip-bottom-right">{{ 'signup_page_password_tooltip' | translate }}</b>
                     </label>
 
                     <label class="input">
-                        <i class="icon-append fa fa-lock" [class.signup_input_icon_en]="language=='en'"></i>
-                        <input type="password" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" style="padding: 0 45px;" placeholder="رمز عبور خود را تکرار کنید">
-                        <b class="tooltip tooltip-bottom-right">دقت داشته باشید که گذرواژه را به درستی تکرار کنید</b>
+                        <i class="icon-append fa fa-lock" [class.signup_input_icon_en]="translate.currentLang=='en'"></i>
+                        <input type="password" [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'" style="padding: 0 45px;" placeholder="{{ 'signup_page_password_confirm_placeholder' | translate }}">
+                        <b class="tooltip tooltip-bottom-right">{{ 'signup_page_password_confirm_tooltip' | translate }}</b>
                     </label>
                 </fieldset>
 
@@ -42,39 +40,36 @@
                     <div class="row">
                         <div class="col-md-6">
                             <label class="input">
-                                <input type="text" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" placeholder="نام کاربری">
+                                <input type="text" [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'" placeholder="{{ 'signup_page_username_placeholder' | translate }}">
                             </label>
                         </div>
                         <div class="col-md-6">
                             <label class="input">
-                                <input type="text" [class.text_right]="language=='fa'" [class.text_left]="language=='en'" placeholder="نام و نام خانوادگی">
+                                <input type="text" [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'" placeholder="{{ 'signup_page_full_name_placeholder' | translate }}">
                             </label>
                         </div>
                     </div>
 
                     <label class="select">
-                        <select style="padding-right: 50px;">
-                            <option value="0" selected disabled>جنسیت</option>
-                            <option value="1">مرد</option>
-                            <option value="2">زن</option>
-                            <option value="3">سایر</option>
+                        <select style="padding-right: 50px;" [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'">
+                            <option value="0" selected disabled>{{ 'signup_page_gender_field_gender_option' | translate }}</option>
+                            <option value="1">{{ 'signup_page_gender_field_male_option' | translate }}</option>
+                            <option value="2">{{ 'signup_page_gender_field_female_option' | translate }}</option>
+                            <option value="3">{{ 'signup_page_gender_field_other_option' | translate }}</option>
                         </select>
                         <i></i>
                     </label>
 
                     <div class="margin-top20">
                         <label style="padding-right: 0;" class="checkbox nomargin"><input class="checked-agree"
-                                type="checkbox" name="checkbox" [(ngModel)]="accepted_terms"><i></i>من با قوانین سایت
-                            موافقم <a href="#" data-toggle="modal" data-target="#termsModal">مطالعه</a></label>
+                                type="checkbox" name="checkbox" [(ngModel)]="accepted_terms"><i></i>{{ 'signup_page_agree_to_the_terms_checkbox_text' | translate }}<a href="#" data-toggle="modal" data-target="#termsModal">{{ 'signup_page_read_the_terms_link_text' | translate }}</a></label>
                         <label class="checkbox nomargin"><input style="padding-left: 0;" type="checkbox"
-                                name="checkbox"><i></i>عضویت در خبرنامه
-                            سایت را میپذریم</label>
+                                name="checkbox"><i></i>{{ 'signup_page_submit_to_newsletter_checkbox_text' | translate }}</label>
                     </div>
                 </fieldset>
 
                 <footer>
-                    <button type="submit" class="btn btn-primary" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'"><i class="fa fa-check"></i> ساخت حساب
-                        کاربری</button>
+                    <button type="submit" class="btn btn-primary" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'"><i class="fa fa-check"></i> {{ 'signup_page_register_button_text' | translate }}</button>
                 </footer>
 
             </form>
@@ -93,7 +88,7 @@
                     <button type="button" class="close" data-dismiss="modal" aria-hidden="true">
                         &times;
                     </button>
-                    <h4 class="modal-title" id="myModal">موافقت نامه کاربری</h4>
+                    <h4 class="modal-title" id="myModal">{{ 'signup_page_terms_popup_title' | translate }}</h4>
                 </div>
 
                 <div class="modal-body modal-terms">
@@ -109,10 +104,9 @@
 
                 <div class="modal-footer">
                     <button type="button" class="btn btn-default" style="margin: 0 10px;"
-                        data-dismiss="modal">انصراف</button>
+                        data-dismiss="modal">{{ 'signup_page_terms_popup_cancel_button_text' | translate }}</button>
                     <button type="button" class="btn btn-primary" data-dismiss="modal" (click)="acceptTerms()"><i
-                            class="fa fa-check"></i> پذیرش
-                        قوانین</button>
+                            class="fa fa-check"></i> {{ 'signup_page_terms_popup_agree_button_text' | translate }}</button>
                 </div>
 
             </div><!-- /.modal-content -->
