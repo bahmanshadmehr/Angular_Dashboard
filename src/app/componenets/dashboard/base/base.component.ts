@@ -1,4 +1,5 @@
 import { Component, OnInit, ViewEncapsulation } from '@angular/core';
+import { TranslateService } from '@ngx-translate/core';
 import { SideMenuComponent } from '../side-menu/side-menu.component';
 
 @Component({
@@ -8,12 +9,9 @@ import { SideMenuComponent } from '../side-menu/side-menu.component';
   encapsulation: ViewEncapsulation.None
 })
 export class BaseComponent implements OnInit {
-  language: string;
-
-  constructor() { }
+  constructor(public translate: TranslateService) { }
 
   ngOnInit() {
-    this.language = 'fa';
   }
 
 }

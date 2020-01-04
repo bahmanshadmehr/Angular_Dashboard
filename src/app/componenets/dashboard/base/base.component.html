@@ -2,13 +2,13 @@
 
 
     <!-- WRAPPER -->
-    <div id="wrapper" class="{{language=='fa' ? 'wrapperFa' : ''}}">
+    <div id="wrapper" class="{{translate.currentLang=='fa' ? 'wrapperFa' : ''}}">
 
         <!-- 
             ASIDE 
             Keep it outside of #wrapper (responsive purpose)
         -->
-        <aside id="aside" class="{{language=='fa' ? 'asideFa' : ''}}">
+        <aside id="aside" class="{{translate.currentLang=='fa' ? 'asideFa' : ''}}">
             <!--
                 Always open:
                 <li class="active alays-open">
@@ -21,74 +21,30 @@
                     <span class="label label-info pull-right">1</span>
             -->
             <nav id="sideNav">
+                <app-side-menu></app-side-menu>
                 <!-- MAIN MENU -->
-                <ul class="nav nav-list">
-                    <li class="active">
-                        <!-- dashboard -->
-                        <a class="dashboard" href="index.html">
-                            <!-- warning - url used by default by ajax (if eneabled) -->
-                            <i class="main-icon fa fa-dashboard"></i> <span [class.pull-right]="language=='fa'"
-                                [class.pull-left]="language=='en'">داشبورد</span>
-                        </a>
-                    </li>
-                    <li class="active">
-                        <a href="#">
-                            <i class="fa fa-menu-arrow" [class.pull-right]="language=='en'"
-                                [class.pull-left]="language=='fa'"></i>
-                            <i class="main-icon fa fa-book"></i> <span [class.pull-right]="language=='fa'"
-                                [class.pull-left]="language=='en'">صفحات</span>
-                        </a>
-                        <ul [class.sub_menu_li_fa]="language=='fa'">
-                            <!-- submenus -->
-                            <li><a href="page-invoice.html">صورت حساب</a></li>
-                            <li><a href="page-login.html">ورود</a></li>
-                            <li><a href="page-register.html">ثبت نام</a></li>
-                            <li><a href="page-lock.html">قفل صفحه</a></li>
-                            <li><a href="page-forum.html">انجمن</a></li>
-                            <li><a href="page-404.html">خطای 404</a></li>
-                            <li><a href="page-500.html">خطای 500</a></li>
-                            <li><a href="page-pricing.html">جدول قیمت ها</a></li>
-                            <li><a href="page-search.html">نتایج جستجو</a></li>
-                            <li><a href="page-sidebar.html">صفحه سایدبار</a></li>
-                            <li><a href="page-user-profile.html">پروفایل کاربری</a></li>
-                            <li class="active"><a href="page-blank-1.html">صفحه خالی و آزاد</a></li>
-                        </ul>
-                    </li>
-                </ul>
-
-                <!-- SECOND MAIN LIST -->
-                <h3 [class.sub_menu_li_fa]="language=='fa'">دیگر قسمت ها</h3>
-                <ul class="nav nav-list">
-                    <li>
-                        <a href="calendar.html">
-                            <i class="main-icon fa fa-calendar"></i>
-                            <span class="label label-warning" [class.pull-right]="language=='en'"
-                                [class.pull-left]="language=='fa'">3 رویداد</span> <span
-                                [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'">تقویم</span>
-                        </a>
-                    </li>
-                </ul>
+                
 
             </nav>
 
-            <span id="asidebg" class="{{language=='fa' ? 'asideFabg' : '' }}">
+            <span id="asidebg" class="{{translate.currentLang=='fa' ? 'asideFabg' : '' }}">
                 <!-- aside fixed background --></span>
         </aside>
         <!-- /ASIDE -->
 
 
         <!-- HEADER -->
-        <header id="header" class="{{language=='fa' ? 'headerFa' : '' }}">
+        <header id="header" class="{{translate.currentLang=='fa' ? 'headerFa' : '' }}">
 
             <!-- Mobile Button -->
-            <button id="mobileMenuBtn" class="{{language=='fa' ? 'mobileMenuBtnFa' : '' }}"></button>
+            <button id="mobileMenuBtn" class="{{translate.currentLang=='fa' ? 'mobileMenuBtnFa' : '' }}"></button>
 
             <!-- Logo -->
-            <span style="margin: 0 30px;;" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'">
+            <span style="margin: 0 30px;;" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
                 <img src="assets/images/logo_light.png" alt="admin panel" height="35" />
             </span>
 
-            <form method="get" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'"
+            <form method="get" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'"
                 action="page-search.html" class="search hidden-xs">
                 <input type="text" class="form-control" style="direction: rtl;" name="k"
                     placeholder="جستجو در سایت ..." />
@@ -97,7 +53,7 @@
             <nav>
 
                 <!-- OPTIONS LIST -->
-                <ul class="nav" [class.pull-left]="language=='fa'" [class.pull-right]="language=='en'">
+                <ul class="nav" [class.pull-left]="translate.currentLang=='fa'" [class.pull-right]="translate.currentLang=='en'">
 
                     <!-- USER OPTIONS -->
                     <li class="dropdown pull-left">
@@ -152,11 +108,11 @@
         <!-- 
             MIDDLE 
         -->
-        <section id="middle" class="{{language=='fa' ? 'middleFa' : '' }}">
+        <section id="middle" class="{{translate.currentLang=='fa' ? 'middleFa' : '' }}">
 
 
             <!-- page title -->
-            <header id="page-header" [class.direction_rtl]="language=='fa'" [class.direction_ltr]="language=='en'">
+            <header id="page-header" [class.direction_rtl]="translate.currentLang=='fa'" [class.direction_ltr]="translate.currentLang=='en'">
                 <h1>صفحه خالی و آزاد</h1>
                 <ol class="breadcrumb">
                     <li><a href="#">صفحات</a></li>
@@ -166,8 +122,8 @@
             <!-- /page title -->
 
 
-            <div id="content" class="padding-20" [class.direction_rtl]="language=='fa'"
-                [class.direction_ltr]="language=='en'">
+            <div id="content" class="padding-20" [class.direction_rtl]="translate.currentLang=='fa'"
+                [class.direction_ltr]="translate.currentLang=='en'">
             </div>
         </section>
         <!-- /MIDDLE -->
