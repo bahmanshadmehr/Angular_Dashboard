@@ -7,9 +7,8 @@
 
             <!-- login form -->
             <form action="index.html" method="post" class="sky-form boxed">
-                <header [class.text_right]="language=='fa'" [class.text_left]="language=='en'"
-                    [class.rtl_dir]="language=='fa'" [class.ltr_dir]="language=='en'"><i class="fa fa-users"></i> ورود
-                    اعضا</header>
+                <header [class.text_right]="translate.currentLang=='fa'" [class.text_left]="translate.currentLang=='en'"
+                    [class.rtl_dir]="translate.currentLang=='fa'" [class.ltr_dir]="translate.currentLang=='en'"><i class="fa fa-users"></i>{{ 'login_page_card_title' | translate }}</header>
 
                 <!--
 					<div class="alert alert-danger noborder text-center weight-400 nomargin noradius">
@@ -29,33 +28,32 @@
                 <fieldset>
 
                     <section>
-                        <label class="label" [class.text_right]="language=='fa'"
-                            [class.text_left]="language=='en'">ایمیل یا نام کاربری</label>
+                        <label class="label" [class.text_right]="translate.currentLang=='fa'"
+                            [class.text_left]="translate.currentLang=='en'">{{ 'login_page_email_or_username_label' | translate }}</label>
                         <label class="input" style="text-align: left;">
-                            <i class="icon-append fa fa-envelope" [class.login_input_icon_en]="language=='en'"></i>
-                            <input type="text" style="padding: 0 45px;" placeholder="آدرس ایمیل خود را وارد کنید">
-                            <b class="tooltip tooltip-bottom-right">یک ایمیل معتبر را وارد کنید زیرا برای تایید شدن حساب
-                                کاربریتان به آن نیاز دارید.</b>
+                            <i class="icon-append fa fa-envelope" [class.login_input_icon_en]="translate.currentLang=='en'"></i>
+                            <input type="text" style="padding: 0 45px;" placeholder="{{ 'login_page_email_or_username_placeholer' | translate }}">
+                            <b class="tooltip tooltip-bottom-right">{{ 'login_page_email_or_username_tooltip' | translate }}</b>
                         </label>
                     </section>
 
                     <section>
-                        <label class="label" [class.text_right]="language=='fa'"
-                            [class.text_left]="language=='en'">گذرواژه</label>
+                        <label class="label" [class.text_right]="translate.currentLang=='fa'"
+                            [class.text_left]="translate.currentLang=='en'">{{ 'login_page_password_label' | translate }}</label>
                         <label class="input">
-                            <i class="icon-append fa fa-lock" [class.login_input_icon_en]="language=='en'"></i>
-                            <input type="password" style="padding: 0 45px;" placeholder="رمز عبور">
-                            <b class="tooltip tooltip-top-right">رمز عبور خود را وارد کنید</b>
+                            <i class="icon-append fa fa-lock" [class.login_input_icon_en]="translate.currentLang=='en'"></i>
+                            <input type="password" style="padding: 0 45px;" placeholder="{{ 'login_page_password_placeholer' | translate }}">
+                            <b class="tooltip tooltip-top-right">{{ 'login_page_password_tooltip' | translate }}</b>
                         </label>
                     </section>
 
                 </fieldset>
 
                 <footer>
-                    <button type="submit" class="btn btn-primary" [class.pull-right]="language=='fa'" [class.pull-left]="language=='en'">ورود</button>
-                    <div class="forgot-password" [class.pull-left]="language=='fa'" [class.pull-right]="language=='en'">
-                        <a href="page-password.html">فراموشی رمز</a> <br />
-                        <a routerLink="/signup"><b>ثبت نام در سایت</b></a>
+                    <button type="submit" class="btn btn-primary" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">{{ 'login_page_login_button_text' | translate }}</button>
+                    <div class="forgot-password" [class.pull-left]="translate.currentLang=='fa'" [class.pull-right]="translate.currentLang=='en'">
+                        <a href="page-password.html">{{ 'login_page_forgot_password_text' | translate }}</a> <br />
+                        <a routerLink="/signup"><b>{{ 'login_page_register_text' | translate }}</b></a>
                     </div>
                 </footer>
             </form>

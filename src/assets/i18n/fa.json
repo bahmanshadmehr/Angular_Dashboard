@@ -1,0 +1,12 @@
+{
+    "login_page_card_title": "ورود اعضا",
+    "login_page_email_or_username_label": "ایمیل و یا نام کاربری",
+    "login_page_email_or_username_tooltip": "برای ورود به سامانه یک ایمیل و یا نام کاربری معتبر وارد کنید.",
+    "login_page_email_or_username_placeholer": "ایمیل یا نام کاربری",
+    "login_page_password_label": "رمز عبور",
+    "login_page_password_tooltip": "رمزعبور خود را وارد کنید.",
+    "login_page_password_placeholer": "لطفا رمز عبور خود را وارد کنید.",
+    "login_page_login_button_text": "ورود",
+    "login_page_forgot_password_text": "رمز عبور را فراموش کرده اید؟",
+    "login_page_register_text": "ثبت نام کنید"
+}

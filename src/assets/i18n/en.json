@@ -1,0 +1,12 @@
+{
+    "login_page_card_title": "Member Login",
+    "login_page_email_or_username_label": "Email or Username",
+    "login_page_email_or_username_tooltip": "Enter a valid email address or your username for logging in to your dashboard!",
+    "login_page_email_or_username_placeholer": "Please enter your email...",
+    "login_page_password_label": "Password",
+    "login_page_password_tooltip": "Please enter your password!",
+    "login_page_password_placeholer": "Please enter your password...",
+    "login_page_login_button_text": "Login",
+    "login_page_forgot_password_text": "Forgot your password?",
+    "login_page_register_text": "Register"
+}
