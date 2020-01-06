@@ -11,7 +11,7 @@
 
     <form method="get" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'"
         action="page-search.html" class="search hidden-xs">
-        <input type="text" class="form-control" style="direction: rtl;" name="k" placeholder="جستجو در سایت ..." />
+        <input type="text" class="form-control" style="direction: rtl;" name="k" placeholder="{{ 'header_searchbar_placeholder' | translate }}" />
     </form>
 
     <nav>
@@ -27,35 +27,20 @@
                     <img class="user-avatar" alt="" src="assets/images/noavatar.jpg" height="34" />
                     <span class="user-name">
                         <span class="hidden-xs">
-                            کاربر ادمین <i class="fa fa-angle-down"></i>
+                            <span>{{ 'header_user_text' | translate }}</span> ادمین <i class="fa fa-angle-down"></i>
                         </span>
                     </span>
                 </a>
                 <ul class="dropdown-menu hold-on-click">
                     <li>
-                        <!-- my calendar -->
-                        <a href="calendar.html"><i class="fa fa-calendar"></i> تقویم کاربری</a>
-                    </li>
-                    <li>
-                        <!-- my inbox -->
-                        <a href="#"><i class="fa fa-envelope"></i> صندوق ورودی
-                            <span class="pull-right label label-default">10</span>
-                        </a>
-                    </li>
-                    <li>
                         <!-- settings -->
-                        <a href="page-user-profile.html"><i class="fa fa-cogs"></i> تنظیمات</a>
+                        <a routerLink="/dashboard/profile"><i class="fa fa-user"></i> {{ 'header_profile_button_text' | translate }}</a>
                     </li>
 
                     <li class="divider"></li>
-
-                    <li>
-                        <!-- lockscreen -->
-                        <a href="page-lock.html"><i class="fa fa-lock"></i> قفل صفحه</a>
-                    </li>
                     <li>
                         <!-- logout -->
-                        <a href="page-login.html"><i class="fa fa-power-off"></i> خروج</a>
+                        <a href="page-login.html"><i class="fa fa-power-off"></i> {{ 'header_exit_button_text' | translate }}</a>
                     </li>
                 </ul>
             </li>

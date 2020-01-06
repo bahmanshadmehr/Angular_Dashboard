@@ -30,5 +30,21 @@
     "signup_page_register_button_text": "ثبت نام",
     "signup_page_terms_popup_title": "شرایط و قوانین",
     "signup_page_terms_popup_cancel_button_text": "لغو",
-    "signup_page_terms_popup_agree_button_text": "تایید"
+    "signup_page_terms_popup_agree_button_text": "تایید",
+
+
+    "base_page_title": "داشبورد",
+
+
+    "header_searchbar_placeholder": "جست و جو...",
+    "header_user_text": "کاربر",
+    "header_profile_button_text": "پروفایل",
+    "header_exit_button_text": "خروج",
+
+
+    "side_menu_dashboard_item": "داشبورد",
+    "side_menu_user_options": "اکانت کاربری",
+    "side_menu_user_profile_item": "پروفایل",
+    "side_menu_other_seperator": "سایر",
+    "side_menu_exit_item": "خروج"
 }

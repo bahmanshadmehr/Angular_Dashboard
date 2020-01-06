@@ -28,10 +28,9 @@
             <!-- page title -->
             <header id="page-header" [class.direction_rtl]="translate.currentLang=='fa'"
                 [class.direction_ltr]="translate.currentLang=='en'">
-                <h1>صفحه خالی و آزاد</h1>
+                <h1>{{ 'base_page_title' | translate }}</h1>
                 <ol class="breadcrumb">
-                    <li><a href="#">صفحات</a></li>
-                    <li class="active">صفحه خالی و آزاد</li>
+                    <li class="active">{{ 'base_page_title' | translate }}</li>
                 </ol>
             </header>
             <!-- /page title -->

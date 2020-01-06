@@ -1,47 +1,35 @@
 <ul class="nav nav-list">
     <li class="active">
         <!-- dashboard -->
-        <a class="dashboard" href="index.html">
+        <a class="dashboard" routerLink="/dashboard">
             <!-- warning - url used by default by ajax (if eneabled) -->
             <i class="main-icon fa fa-dashboard"></i> <span [class.pull-right]="translate.currentLang=='fa'"
-                [class.pull-left]="translate.currentLang=='en'">داشبورد</span>
+                [class.pull-left]="translate.currentLang=='en'">{{ 'side_menu_dashboard_item' | translate }}</span>
         </a>
     </li>
     <li class="active">
         <a href="#">
             <i class="fa fa-menu-arrow" [class.pull-right]="translate.currentLang=='en'"
                 [class.pull-left]="translate.currentLang=='fa'"></i>
-            <i class="main-icon fa fa-book"></i> <span [class.pull-right]="translate.currentLang=='fa'"
-                [class.pull-left]="translate.currentLang=='en'">صفحات</span>
+            <i class="main-icon fa fa-user"></i> <span [class.pull-right]="translate.currentLang=='fa'"
+                [class.pull-left]="translate.currentLang=='en'">{{ 'side_menu_user_options' | translate }}</span>
         </a>
         <ul [class.sub_menu_li_fa]="translate.currentLang=='fa'">
             <!-- submenus -->
-            <li><a href="page-invoice.html">صورت حساب</a></li>
-            <li><a href="page-login.html">ورود</a></li>
-            <li><a href="page-register.html">ثبت نام</a></li>
-            <li><a href="page-lock.html">قفل صفحه</a></li>
-            <li><a href="page-forum.html">انجمن</a></li>
-            <li><a href="page-404.html">خطای 404</a></li>
-            <li><a href="page-500.html">خطای 500</a></li>
-            <li><a href="page-pricing.html">جدول قیمت ها</a></li>
-            <li><a href="page-search.html">نتایج جستجو</a></li>
-            <li><a href="page-sidebar.html">صفحه سایدبار</a></li>
-            <li><a href="page-user-profile.html">پروفایل کاربری</a></li>
-            <li class="active"><a href="page-blank-1.html">صفحه خالی و آزاد</a></li>
+            <li><a routerLink="/dashboard/profile">{{ 'side_menu_user_profile_item' | translate }}</a></li>
         </ul>
     </li>
 </ul>
 
 <!-- SECOND MAIN LIST -->
-<h3 [class.sub_menu_li_fa]="translate.currentLang=='fa'" style="margin: 10px;">دیگر قسمت ها</h3>
+<h3 [class.sub_menu_li_fa]="translate.currentLang=='fa'" style="margin: 10px;">{{ 'side_menu_other_seperator' | translate }}</h3>
 <ul class="nav nav-list">
-    <li>
-        <a href="calendar.html">
-            <i class="main-icon fa fa-calendar"></i>
-            <span class="label label-warning" [class.pull-right]="translate.currentLang=='en'"
-                [class.pull-left]="translate.currentLang=='fa'">3 رویداد</span> <span
-                [class.pull-right]="translate.currentLang=='fa'"
-                [class.pull-left]="translate.currentLang=='en'">تقویم</span>
+    <li class="active">
+        <!-- dashboard -->
+        <a class="dashboard" href="index.html">
+            <!-- warning - url used by default by ajax (if eneabled) -->
+            <i class="main-icon fa fa-sign-out"></i> <span [class.pull-right]="translate.currentLang=='fa'"
+                [class.pull-left]="translate.currentLang=='en'">{{ 'side_menu_exit_item' | translate }}</span>
         </a>
     </li>
 </ul>

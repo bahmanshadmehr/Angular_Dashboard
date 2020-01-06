@@ -30,5 +30,21 @@
     "signup_page_register_button_text": "Register",
     "signup_page_terms_popup_title": "Terms",
     "signup_page_terms_popup_cancel_button_text": "Cancel",
-    "signup_page_terms_popup_agree_button_text": "Agree"
+    "signup_page_terms_popup_agree_button_text": "Agree",
+
+
+    "base_page_title": "Dashboard",
+
+
+    "header_searchbar_placeholder": "Search...",
+    "header_user_text": "user",
+    "header_profile_button_text": "profile",
+    "header_exit_button_text": "Exit",
+
+
+    "side_menu_dashboard_item": "Dashboard",
+    "side_menu_user_options": "User",
+    "side_menu_user_profile_item": "Profile",
+    "side_menu_other_seperator": "Other",
+    "side_menu_exit_item": "Exit"
 }
