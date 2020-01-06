@@ -1,0 +1,26 @@
+.tab-content{
+    background-color: white !important;
+}
+
+li.active{
+    background-color: white !important;
+    
+}
+
+.line-legend{
+    background-color: blueviolet;
+}
+
+.line-legend li span{
+    display: inline-block !important;
+    padding: 8x;
+    margin: 0 2px;
+}
+
+.ltr_dir{
+    direction: ltr;
+}
+
+.rtl_dir{
+    direction: rtl;
+}

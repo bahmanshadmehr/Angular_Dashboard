@@ -15,6 +15,8 @@ import { SignupComponent } from './componenets/auth/signup/signup.component';
 import { BaseComponent } from './componenets/dashboard/base/base.component';
 import { SideMenuComponent } from './componenets/dashboard/side-menu/side-menu.component';
 import { InterenceComponent } from './componenets/dashboard/interence/interence.component';
+import { HeaderComponent } from './componenets/dashboard/header/header.component';
+import { ProfileComponent } from './componenets/dashboard/user/profile/profile.component';
 
 
 // AoT requires an exported function for factories
@@ -30,6 +32,8 @@ export function HttpLoaderFactory(http: HttpClient) {
     BaseComponent,
     SideMenuComponent,
     InterenceComponent,
+    HeaderComponent,
+    ProfileComponent,
   ],
   imports: [
     BrowserModule,

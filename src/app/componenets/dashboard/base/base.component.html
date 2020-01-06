@@ -4,104 +4,18 @@
     <!-- WRAPPER -->
     <div id="wrapper" class="{{translate.currentLang=='fa' ? 'wrapperFa' : ''}}">
 
-        <!-- 
-            ASIDE 
-            Keep it outside of #wrapper (responsive purpose)
-        -->
         <aside id="aside" class="{{translate.currentLang=='fa' ? 'asideFa' : ''}}">
-            <!--
-                Always open:
-                <li class="active alays-open">
-
-                LABELS:
-                    <span class="label label-danger pull-right">1</span>
-                    <span class="label label-default pull-right">1</span>
-                    <span class="label label-warning pull-right">1</span>
-                    <span class="label label-success pull-right">1</span>
-                    <span class="label label-info pull-right">1</span>
-            -->
             <nav id="sideNav">
                 <app-side-menu></app-side-menu>
-                <!-- MAIN MENU -->
-                
-
             </nav>
 
-            <span id="asidebg" class="{{translate.currentLang=='fa' ? 'asideFabg' : '' }}">
-                <!-- aside fixed background --></span>
+            <span id="asidebg" class="{{translate.currentLang=='fa' ? 'asideFabg' : '' }}"></span>
         </aside>
         <!-- /ASIDE -->
 
 
         <!-- HEADER -->
-        <header id="header" class="{{translate.currentLang=='fa' ? 'headerFa' : '' }}">
-
-            <!-- Mobile Button -->
-            <button id="mobileMenuBtn" class="{{translate.currentLang=='fa' ? 'mobileMenuBtnFa' : '' }}"></button>
-
-            <!-- Logo -->
-            <span style="margin: 0 30px;;" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-                <img src="assets/images/logo_light.png" alt="admin panel" height="35" />
-            </span>
-
-            <form method="get" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'"
-                action="page-search.html" class="search hidden-xs">
-                <input type="text" class="form-control" style="direction: rtl;" name="k"
-                    placeholder="جستجو در سایت ..." />
-            </form>
-
-            <nav>
-
-                <!-- OPTIONS LIST -->
-                <ul class="nav" [class.pull-left]="translate.currentLang=='fa'" [class.pull-right]="translate.currentLang=='en'">
-
-                    <!-- USER OPTIONS -->
-                    <li class="dropdown pull-left">
-                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" data-hover="dropdown"
-                            data-close-others="true">
-                            <img class="user-avatar" alt="" src="assets/images/noavatar.jpg" height="34" />
-                            <span class="user-name">
-                                <span class="hidden-xs">
-                                    کاربر ادمین <i class="fa fa-angle-down"></i>
-                                </span>
-                            </span>
-                        </a>
-                        <ul class="dropdown-menu hold-on-click">
-                            <li>
-                                <!-- my calendar -->
-                                <a href="calendar.html"><i class="fa fa-calendar"></i> تقویم کاربری</a>
-                            </li>
-                            <li>
-                                <!-- my inbox -->
-                                <a href="#"><i class="fa fa-envelope"></i> صندوق ورودی
-                                    <span class="pull-right label label-default">10</span>
-                                </a>
-                            </li>
-                            <li>
-                                <!-- settings -->
-                                <a href="page-user-profile.html"><i class="fa fa-cogs"></i> تنظیمات</a>
-                            </li>
-
-                            <li class="divider"></li>
-
-                            <li>
-                                <!-- lockscreen -->
-                                <a href="page-lock.html"><i class="fa fa-lock"></i> قفل صفحه</a>
-                            </li>
-                            <li>
-                                <!-- logout -->
-                                <a href="page-login.html"><i class="fa fa-power-off"></i> خروج</a>
-                            </li>
-                        </ul>
-                    </li>
-                    <!-- /USER OPTIONS -->
-
-                </ul>
-                <!-- /OPTIONS LIST -->
-
-            </nav>
-
-        </header>
+        <app-header></app-header>
         <!-- /HEADER -->
 
 
@@ -112,7 +26,8 @@
 
 
             <!-- page title -->
-            <header id="page-header" [class.direction_rtl]="translate.currentLang=='fa'" [class.direction_ltr]="translate.currentLang=='en'">
+            <header id="page-header" [class.direction_rtl]="translate.currentLang=='fa'"
+                [class.direction_ltr]="translate.currentLang=='en'">
                 <h1>صفحه خالی و آزاد</h1>
                 <ol class="breadcrumb">
                     <li><a href="#">صفحات</a></li>
@@ -124,6 +39,7 @@
 
             <div id="content" class="padding-20" [class.direction_rtl]="translate.currentLang=='fa'"
                 [class.direction_ltr]="translate.currentLang=='en'">
+                <router-outlet></router-outlet>
             </div>
         </section>
         <!-- /MIDDLE -->
