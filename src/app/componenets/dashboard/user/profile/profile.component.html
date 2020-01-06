@@ -1,627 +1,694 @@
-<div class="row">
-
-    <!-- COL 1 -->
-    <div class="col-md-4 col-lg-3" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-        <section class="panel">
-            <div class="panel-body noradius padding-10">
-
-                <figure class="margin-bottom-10">
-                    <!-- image -->
-                    <img class="img-responsive" src="assets/images/demo/9_full.jpg" alt="" />
-                </figure><!-- /image -->
-
-                <!-- progress bar -->
-                <h6 class="progress-head">تکمیل پروفایل <span [class.pull-right]="translate.currentLang=='en'" [class.pull-left]="translate.currentLang=='fa'">60%</span></h6>
-                <div class="progress progress-xs">
-                    <div class="progress-bar" role="progressbar" style="width: 60%;"></div>
-                </div><!-- /progress bar -->
-
-                <!-- updated -->
-                <ul class="list-unstyled size-13">
-                    <li class="text-gray"><i class="fa fa-check"></i> تاریخ تولد بروزرسانی شد</li>
-                    <li class="text-gray"><i class="fa fa-check"></i> تصویر پروفایل بروزرسانی شد</li>
-                    <li>حساب کاربری خود را تایید کنید</li>
-                    <li>آدرس واطلاعات فردی را بروزرسانی کنید</li>
-                </ul><!-- /updated -->
-
-                <hr class="half-margins" />
-
-                <!-- About -->
-                <h3 class="text-black">
-                    سمیرا شیرازی
-                    <small class="text-gray size-14"> / متخصص سئو</small>
-                </h3>
-                <p class="size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
-                    گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                    تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
-                <!-- /About -->
-
-            </div>
-        </section>
-    </div><!-- /COL 1 -->
-
-    <!-- COL 2 -->
-    <div class="col-md-8 col-lg-6 col-xs-12" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-
-        <div class="tabs white nomargin-top">
-            <ul class="nav nav-tabs tabs-primary" style="padding: 0px;">
-                <li class="active" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-                    <a href="#contest_position" data-toggle="tab">وضعیت شما</a>
-                </li>
-                <li [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-                    <a href="#edit" data-toggle="tab">ویرایش اطلاعات</a>
-                </li>
-            </ul>
-
-            <div class="tab-content">
-
-                <!-- Overview -->
-                <div id="contest_position" class="tab-pane active">
+<!-- page title -->
+<header id="page-header" [class.direction_rtl]="translate.currentLang=='fa'"
+    [class.direction_ltr]="translate.currentLang=='en'">
+    <h1>{{ 'profile_page_title' | translate }}</h1>
+    <ol class="breadcrumb">
+        <li>{{ 'profile_page_title' | translate }}</li>
+    </ol>
+</header>
+<!-- /page title -->
 
 
+<div id="content" class="padding-20" [class.direction_rtl]="translate.currentLang=='fa'"
+    [class.direction_ltr]="translate.currentLang=='en'">
 
 
-                    <!-- /right options -->
-                    <div id="" class="panel panel-default">
+    <div class="row">
 
-                        <div class="panel-heading" >
+        <!-- COL 1 -->
+        <div class="col-md-4 col-lg-3" [class.pull-right]="translate.currentLang=='fa'"
+            [class.pull-left]="translate.currentLang=='en'">
+            <section class="panel">
+                <div class="panel-body noradius padding-10">
 
-                            <span class="elipsis" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-                                <!-- panel title -->
-                                <strong>Line Chart</strong>
-                            </span>
+                    <figure class="margin-bottom-10">
+                        <!-- image -->
+                        <img class="img-responsive" src="assets/images/demo/9_full.jpg" alt="" />
+                    </figure><!-- /image -->
 
-                            <!-- right options -->
-                            <ul class="options pull-right list-inline" style="padding: 0;" [class.pull-right]="translate.currentLang=='en'" [class.pull-left]="translate.currentLang=='fa'">
-                                <li><a href="#" class="opt panel_colapse" data-toggle="tooltip" title="Colapse"
-                                        data-placement="bottom"></a></li>
-                                <li><a href="#" class="opt panel_close" data-confirm-title="Confirm"
-                                        data-confirm-message="Are you sure you want to remove this panel?"
-                                        data-toggle="tooltip" title="Close" data-placement="bottom"><i
-                                            class="fa fa-times"></i></a></li>
-                            </ul>
-                            <!-- /right options -->
+                    <!-- progress bar -->
+                    <h6 class="progress-head">تکمیل پروفایل <span [class.pull-right]="translate.currentLang=='en'"
+                            [class.pull-left]="translate.currentLang=='fa'">60%</span></h6>
+                    <div class="progress progress-xs">
+                        <div class="progress-bar" role="progressbar" style="width: 60%;"></div>
+                    </div><!-- /progress bar -->
 
-                        </div>
+                    <!-- updated -->
+                    <ul class="list-unstyled size-13">
+                        <li class="text-gray"><i class="fa fa-check"></i> تاریخ تولد بروزرسانی شد</li>
+                        <li class="text-gray"><i class="fa fa-check"></i> تصویر پروفایل بروزرسانی شد</li>
+                        <li>حساب کاربری خود را تایید کنید</li>
+                        <li>آدرس واطلاعات فردی را بروزرسانی کنید</li>
+                    </ul><!-- /updated -->
 
-                        <!-- panel content -->
-                        <div class="panel-body">
-                            <div id="my-lineChartCanvas-legend"></div>
+                    <hr class="half-margins" />
 
-                            <canvas class="chartjs fullwidth height-300" id="lineChartCanvas" style="direction: ltr;" width="547"
-                                height="300"></canvas>
-
-                        </div>
-                        <!-- /panel content -->
-
-                    </div>
-
-
-                    <div id="panel-1" class="panel panel-default">
-                        <div class="panel-heading">
-                            <span class="title elipsis" [class.pull-right]="translate.currentLang=='fa'" [class.pull-left]="translate.currentLang=='en'">
-                                <strong>CLEAN TABLE</strong> <!-- panel title -->
-                            </span>
-
-                            <!-- right options -->
-                            <ul class="options pull-right list-inline" style="padding: 0;" [class.pull-right]="translate.currentLang=='en'" [class.pull-left]="translate.currentLang=='fa'">
-                                <li><a href="#" class="opt panel_colapse" data-toggle="tooltip" title="Colapse"
-                                        data-placement="bottom"></a></li>
-
-                                <li><a href="#" class="opt panel_close" data-confirm-title="Confirm"
-                                        data-confirm-message="Are you sure you want to remove this panel?"
-                                        data-toggle="tooltip" title="Close" data-placement="bottom"><i
-                                            class="fa fa-times"></i></a></li>
-                            </ul>
-                            <!-- /right options -->
-
-                        </div>
-
-                        <!-- panel content -->
-                        <div class="panel-body">
-
-                            <div class="table-responsive">
-                                <table class="table table-bordered table-vertical-middle nomargin">
-                                    <thead>
-                                        <tr>
-                                            <th class="width-30">Img</th>
-                                            <th>Column name</th>
-                                            <th>Ratings</th>
-                                            <th>Progress</th>
-                                            <th>Share</th>
-                                            <th>Column name</th>
-                                        </tr>
-                                    </thead>
-                                    <tbody>
-                                        <tr>
-                                            <td class="text-center"><img src="assets/images/male.png" alt="" width="20">
-                                            </td>
-                                            <td>Value 1</td>
-                                            <td>
-                                                <div class="rating rating-0 size-13 width-100">
-                                                    <!-- rating-0 ... rating-5 -->
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="progress progress-xxs margin-bottom-0">
-                                                    <div class="progress-bar progress-bar-default" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 80%; min-width: 2em;">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <ul class="list-inline nomargin size-12">
-                                                    <li><a href="#" class="icon-facebook margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Facebook"></a></li>
-                                                    <li><a href="#" class="icon-twitter margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Twitter"></a></li>
-                                                    <li><a href="#" class="icon-gplus margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Google Plus"></a></li>
-                                                    <li><a href="#" class="icon-linkedin margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Linkedin"></a></li>
-                                                    <li><a href="#" class="icon-pinterest margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Pinterest"></a></li>
-                                                </ul>
-                                            </td>
-                                            <td><span class="label label-success">Approved </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><img src="assets/images/female.png" alt=""
-                                                    width="20"></td>
-                                            <td>Value 2</td>
-                                            <td>
-                                                <div class="rating rating-1 size-13 width-100">
-                                                    <!-- rating-0 ... rating-5 -->
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="progress progress-xxs margin-bottom-0">
-                                                    <div class="progress-bar progress-bar-danger" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 80%; min-width: 2em;">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <ul class="list-inline nomargin size-12">
-                                                    <li><a href="#" class="icon-facebook margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Facebook"></a></li>
-                                                    <li><a href="#" class="icon-twitter margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Twitter"></a></li>
-                                                    <li><a href="#" class="icon-gplus margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Google Plus"></a></li>
-                                                    <li><a href="#" class="icon-linkedin margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Linkedin"></a></li>
-                                                    <li><a href="#" class="icon-pinterest margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Pinterest"></a></li>
-                                                </ul>
-                                            </td>
-                                            <td><span class="label label-info">Pending </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><img src="assets/images/female.png" alt=""
-                                                    width="20"></td>
-                                            <td>Value 3</td>
-                                            <td>
-                                                <div class="rating rating-2 size-13 width-100">
-                                                    <!-- rating-0 ... rating-5 -->
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="progress progress-xxs margin-bottom-0">
-                                                    <div class="progress-bar progress-bar-warning" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 80%; min-width: 2em;">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <ul class="list-inline nomargin size-12">
-                                                    <li><a href="#" class="icon-facebook margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Facebook"></a></li>
-                                                    <li><a href="#" class="icon-twitter margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Twitter"></a></li>
-                                                    <li><a href="#" class="icon-gplus margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Google Plus"></a></li>
-                                                    <li><a href="#" class="icon-linkedin margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Linkedin"></a></li>
-                                                    <li><a href="#" class="icon-pinterest margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Pinterest"></a></li>
-                                                </ul>
-                                            </td>
-                                            <td><span class="label label-warning">Suspended </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><img src="assets/images/male.png" alt="" width="20">
-                                            </td>
-                                            <td>Value 4</td>
-                                            <td>
-                                                <div class="rating rating-3 size-13 width-100">
-                                                    <!-- rating-0 ... rating-5 -->
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="progress progress-xxs margin-bottom-0">
-                                                    <div class="progress-bar progress-bar-info" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 80%; min-width: 2em;">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <ul class="list-inline nomargin size-12">
-                                                    <li><a href="#" class="icon-facebook margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Facebook"></a></li>
-                                                    <li><a href="#" class="icon-twitter margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Twitter"></a></li>
-                                                    <li><a href="#" class="icon-gplus margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Google Plus"></a></li>
-                                                    <li><a href="#" class="icon-linkedin margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Linkedin"></a></li>
-                                                    <li><a href="#" class="icon-pinterest margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Pinterest"></a></li>
-                                                </ul>
-                                            </td>
-                                            <td><span class="label label-danger">Blocked </span></td>
-                                        </tr>
-                                        <tr class="active">
-                                            <td class="text-center"><img src="assets/images/male.png" alt="" width="20">
-                                            </td>
-                                            <td>Value 5</td>
-                                            <td>
-                                                <div class="rating rating-4 size-13 width-100">
-                                                    <!-- rating-0 ... rating-5 -->
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="progress progress-xxs margin-bottom-0">
-                                                    <div class="progress-bar progress-bar-success" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 80%; min-width: 2em;">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <ul class="list-inline nomargin size-12">
-                                                    <li><a href="#" class="icon-facebook margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Facebook"></a></li>
-                                                    <li><a href="#" class="icon-twitter margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Twitter"></a></li>
-                                                    <li><a href="#" class="icon-gplus margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Google Plus"></a></li>
-                                                    <li><a href="#" class="icon-linkedin margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Linkedin"></a></li>
-                                                    <li><a href="#" class="icon-pinterest margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Pinterest"></a></li>
-                                                </ul>
-                                            </td>
-                                            <td><span class="label label-primary">N/A </span></td>
-                                        </tr>
-                                        <tr>
-                                            <td class="text-center"><img src="assets/images/female.png" alt=""
-                                                    width="20"></td>
-                                            <td>Value 6</td>
-                                            <td>
-                                                <div class="rating rating-5 size-13 width-100">
-                                                    <!-- rating-0 ... rating-5 -->
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <div class="progress progress-xxs margin-bottom-0">
-                                                    <div class="progress-bar progress-bar-default" role="progressbar"
-                                                        aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
-                                                        style="width: 80%; min-width: 2em;">
-                                                        <span class="sr-only">80% Complete</span>
-                                                    </div>
-                                                </div>
-                                            </td>
-                                            <td>
-                                                <ul class="list-inline nomargin size-12">
-                                                    <li><a href="#" class="icon-facebook margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Facebook"></a></li>
-                                                    <li><a href="#" class="icon-twitter margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Twitter"></a></li>
-                                                    <li><a href="#" class="icon-gplus margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Google Plus"></a></li>
-                                                    <li><a href="#" class="icon-linkedin margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Linkedin"></a></li>
-                                                    <li><a href="#" class="icon-pinterest margin-top-6"
-                                                            data-toggle="tooltip" data-placement="top"
-                                                            title="Pinterest"></a></li>
-                                                </ul>
-                                            </td>
-                                            <td>
-                                                <a href="#" class="btn btn-default btn-xs"><i
-                                                        class="fa fa-edit white"></i> Edit </a>
-                                                <a href="#" class="btn btn-default btn-xs"><i
-                                                        class="fa fa-times white"></i> Delete </a>
-                                            </td>
-                                        </tr>
-                                    </tbody>
-                                </table>
-                            </div>
-
-                        </div>
-                        <!-- /panel content -->
-
-                    </div>
-                    <!-- /PANEL -->
-
-
-
-
-
+                    <!-- About -->
+                    <h3 class="text-black">
+                        سمیرا شیرازی
+                        <small class="text-gray size-14"> / متخصص سئو</small>
+                    </h3>
+                    <p class="size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان
+                        گرافیک است. چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                        تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد. </p>
+                    <!-- /About -->
 
                 </div>
+            </section>
+        </div><!-- /COL 1 -->
 
-                <!-- Edit -->
-                <div id="edit" class="tab-pane" style="width: 100%;">
+        <!-- COL 2 -->
+        <div class="col-md-8 col-lg-6 col-xs-12" [class.pull-right]="translate.currentLang=='fa'"
+            [class.pull-left]="translate.currentLang=='en'">
 
-                    <form class="form-horizontal" method="get">
-                        <h4>اطلاعات شخصی</h4>
-                        <fieldset>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileFirstName">نام و نام خانوادگی</label>
-                                <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <input type="text" class="form-control" id="profileFirstName">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileLastName">نام کاربری</label>
-                                <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <input type="text" class="form-control" id="profileLastName">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileAddress">آدرس</label>
-                                <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <input type="text" class="form-control pull-right" id="profileAddress">
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <hr />
-
-                        <h4>درباره</h4>
-                        <fieldset>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-xs-3 control-label" [class.pull-right]="translate.currentLang=='fa'">نمایش عمومی پروفایل</label>
-                                <div class="col-md-8">
-                                    <label class="checkbox">
-                                        <input type="checkbox" value="1" checked="checked" id="profilePublic">
-                                        <i></i> تایید کردن!
-                                    </label>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileBio">بیوگرافی</label>
-                                <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <textarea class="form-control" rows="3" id="profileBio"></textarea>
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileCompany">نام نمایشی</label>
-                                <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <input type="text" class="form-control" id="profileCompany">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div class="sky-form">
-                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                    <label class="col-xs-3 control-label" [class.pull-right]="translate.currentLang=='fa'">تصویر پروفایل</label>
-                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                        <label for="file" class="input input-file">
-                                            <div class="button">
-                                                <input type="file" id="file"
-                                                    onchange="this.parentNode.nextSibling.value = this.value">جستجو
-                                            </div>
-                                            <input type="text" readonly>
-                                        </label>
-                                        <a href="#" class="btn btn-danger btn-xs nomargin"><i class="fa fa-times"></i>
-                                            حذف تصویر انتخابی</a>
-                                    </div>
-                                </div>
-                            </div>
-
-
-                        </fieldset>
-
-                        <hr />
-
-                        <h4>تغییر گذرواژه</h4>
-                        <fieldset class="mb-xl">
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileNewPassword">رمز عبور جدید</label>
-                                <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <input type="text" class="form-control" id="profileNewPassword">
-                                </div>
-                            </div>
-                            <div class="form-group">
-                                <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
-                                <label class="col-md-3 control-label" [class.pull-right]="translate.currentLang=='fa'" for="profileNewPasswordRepeat">تکرار رمز عبور
-                                    جدید</label>
-                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'" [class.col-md-offset-1]="translate.currentLang=='fa'">
-                                    <input type="text" class="form-control" id="profileNewPasswordRepeat">
-                                </div>
-                            </div>
-                        </fieldset>
-
-                        <div class="row" style="margin-top: 20px;">
-                            <div *ngIf="translate.currentLang=='fa'" class="col-md-2 pull-right"></div>
-                            <div class="col-md-8 col-md-offset-2 pull-left">
-                                <button type="submit" style="margin: 0 10px;" class="btn btn-primary">ثبت اطلاعات</button>
-                                <button type="reset" class="btn btn-default">بازنشانی مشخصات</button>
-                            </div>
-                        </div>
-
-                    </form>
-
-                </div>
-            </div>
-        </div>
-
-    </div><!-- /COL 2 -->
-
-    <!-- COL 3 -->
-    <div class="col-md-12 col-lg-3" [class.pull-right]="translate.currentLang=='en'" [class.pull-left]="translate.currentLang=='fa'">
-
-        <!-- projects -->
-        <section class="panel panel-default">
-            <header class="panel-heading">
-                <h2 class="panel-title elipsis">
-                    <i class="fa fa-rss"></i> پروژه های در دست انجام
-                </h2>
-            </header>
-
-            <div class="panel-body noradius padding-10" [class.rtl_dir]="translate.currentLang=='fa'" [class.ltr_dir]="translate.currentLang=='en'">
-
-                <ul>
-                    <li>
-                        <h3 style="margin-bottom: 10px;">فارسی سازی قالب HTML5</h3>
-                        <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                            استفاده از طراحان گرافیک است. </span>
+            <div class="tabs white nomargin-top">
+                <ul class="nav nav-tabs tabs-primary" style="padding: 0px;">
+                    <li class="active" [class.pull-right]="translate.currentLang=='fa'"
+                        [class.pull-left]="translate.currentLang=='en'">
+                        <a href="#contest_position" data-toggle="tab">وضعیت شما</a>
                     </li>
-                    <li>
-                        <h3 style="margin-bottom: 10px; margin-top: 20px;">راست چین سازی قالب HTML5</h3>
-                        <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                            استفاده از طراحان گرافیک است. </span>
-                    </li>
-                    <li>
-                        <h3 style="margin-bottom: 10px; margin-top: 20px;">ترجمه مقالات انگلیسی</h3>
-                        <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                            استفاده از طراحان گرافیک است. </span>
-                    </li>
-                    <li>
-                        <h3 style="margin-bottom: 10px; margin-top: 20px;">طراحی یک بنر بزرگ</h3>
-                        <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با
-                            استفاده از طراحان گرافیک است. </span>
+                    <li [class.pull-right]="translate.currentLang=='fa'"
+                        [class.pull-left]="translate.currentLang=='en'">
+                        <a href="#edit" data-toggle="tab">ویرایش اطلاعات</a>
                     </li>
                 </ul>
 
+                <div class="tab-content">
+
+                    <!-- Overview -->
+                    <div id="contest_position" class="tab-pane active">
+
+
+
+
+                        <!-- /right options -->
+                        <div id="" class="panel panel-default">
+
+                            <div class="panel-heading">
+
+                                <span class="elipsis" [class.pull-right]="translate.currentLang=='fa'"
+                                    [class.pull-left]="translate.currentLang=='en'">
+                                    <!-- panel title -->
+                                    <strong>Line Chart</strong>
+                                </span>
+
+                                <!-- right options -->
+                                <ul class="options pull-right list-inline" style="padding: 0;"
+                                    [class.pull-right]="translate.currentLang=='en'"
+                                    [class.pull-left]="translate.currentLang=='fa'">
+                                    <li><a href="#" class="opt panel_colapse" data-toggle="tooltip" title="Colapse"
+                                            data-placement="bottom"></a></li>
+                                    <li><a href="#" class="opt panel_close" data-confirm-title="Confirm"
+                                            data-confirm-message="Are you sure you want to remove this panel?"
+                                            data-toggle="tooltip" title="Close" data-placement="bottom"><i
+                                                class="fa fa-times"></i></a></li>
+                                </ul>
+                                <!-- /right options -->
+
+                            </div>
+
+                            <!-- panel content -->
+                            <div class="panel-body">
+                                <div id="my-lineChartCanvas-legend"></div>
+
+                                <canvas class="chartjs fullwidth height-300" id="lineChartCanvas"
+                                    style="direction: ltr;" width="547" height="300"></canvas>
+
+                            </div>
+                            <!-- /panel content -->
+
+                        </div>
+
+
+                        <div id="panel-1" class="panel panel-default">
+                            <div class="panel-heading">
+                                <span class="title elipsis" [class.pull-right]="translate.currentLang=='fa'"
+                                    [class.pull-left]="translate.currentLang=='en'">
+                                    <strong>CLEAN TABLE</strong> <!-- panel title -->
+                                </span>
+
+                                <!-- right options -->
+                                <ul class="options pull-right list-inline" style="padding: 0;"
+                                    [class.pull-right]="translate.currentLang=='en'"
+                                    [class.pull-left]="translate.currentLang=='fa'">
+                                    <li><a href="#" class="opt panel_colapse" data-toggle="tooltip" title="Colapse"
+                                            data-placement="bottom"></a></li>
+
+                                    <li><a href="#" class="opt panel_close" data-confirm-title="Confirm"
+                                            data-confirm-message="Are you sure you want to remove this panel?"
+                                            data-toggle="tooltip" title="Close" data-placement="bottom"><i
+                                                class="fa fa-times"></i></a></li>
+                                </ul>
+                                <!-- /right options -->
+
+                            </div>
+
+                            <!-- panel content -->
+                            <div class="panel-body">
+
+                                <div class="table-responsive">
+                                    <table class="table table-bordered table-vertical-middle nomargin">
+                                        <thead>
+                                            <tr>
+                                                <th class="width-30">Img</th>
+                                                <th>Column name</th>
+                                                <th>Ratings</th>
+                                                <th>Progress</th>
+                                                <th>Share</th>
+                                                <th>Column name</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody>
+                                            <tr>
+                                                <td class="text-center"><img src="assets/images/male.png" alt=""
+                                                        width="20">
+                                                </td>
+                                                <td>Value 1</td>
+                                                <td>
+                                                    <div class="rating rating-0 size-13 width-100">
+                                                        <!-- rating-0 ... rating-5 -->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xxs margin-bottom-0">
+                                                        <div class="progress-bar progress-bar-default"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%; min-width: 2em;">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list-inline nomargin size-12">
+                                                        <li><a href="#" class="icon-facebook margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Facebook"></a></li>
+                                                        <li><a href="#" class="icon-twitter margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Twitter"></a></li>
+                                                        <li><a href="#" class="icon-gplus margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Google Plus"></a></li>
+                                                        <li><a href="#" class="icon-linkedin margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Linkedin"></a></li>
+                                                        <li><a href="#" class="icon-pinterest margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Pinterest"></a></li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="label label-success">Approved </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><img src="assets/images/female.png" alt=""
+                                                        width="20"></td>
+                                                <td>Value 2</td>
+                                                <td>
+                                                    <div class="rating rating-1 size-13 width-100">
+                                                        <!-- rating-0 ... rating-5 -->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xxs margin-bottom-0">
+                                                        <div class="progress-bar progress-bar-danger" role="progressbar"
+                                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                            style="width: 80%; min-width: 2em;">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list-inline nomargin size-12">
+                                                        <li><a href="#" class="icon-facebook margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Facebook"></a></li>
+                                                        <li><a href="#" class="icon-twitter margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Twitter"></a></li>
+                                                        <li><a href="#" class="icon-gplus margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Google Plus"></a></li>
+                                                        <li><a href="#" class="icon-linkedin margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Linkedin"></a></li>
+                                                        <li><a href="#" class="icon-pinterest margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Pinterest"></a></li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="label label-info">Pending </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><img src="assets/images/female.png" alt=""
+                                                        width="20"></td>
+                                                <td>Value 3</td>
+                                                <td>
+                                                    <div class="rating rating-2 size-13 width-100">
+                                                        <!-- rating-0 ... rating-5 -->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xxs margin-bottom-0">
+                                                        <div class="progress-bar progress-bar-warning"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%; min-width: 2em;">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list-inline nomargin size-12">
+                                                        <li><a href="#" class="icon-facebook margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Facebook"></a></li>
+                                                        <li><a href="#" class="icon-twitter margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Twitter"></a></li>
+                                                        <li><a href="#" class="icon-gplus margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Google Plus"></a></li>
+                                                        <li><a href="#" class="icon-linkedin margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Linkedin"></a></li>
+                                                        <li><a href="#" class="icon-pinterest margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Pinterest"></a></li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="label label-warning">Suspended </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><img src="assets/images/male.png" alt=""
+                                                        width="20">
+                                                </td>
+                                                <td>Value 4</td>
+                                                <td>
+                                                    <div class="rating rating-3 size-13 width-100">
+                                                        <!-- rating-0 ... rating-5 -->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xxs margin-bottom-0">
+                                                        <div class="progress-bar progress-bar-info" role="progressbar"
+                                                            aria-valuenow="80" aria-valuemin="0" aria-valuemax="100"
+                                                            style="width: 80%; min-width: 2em;">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list-inline nomargin size-12">
+                                                        <li><a href="#" class="icon-facebook margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Facebook"></a></li>
+                                                        <li><a href="#" class="icon-twitter margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Twitter"></a></li>
+                                                        <li><a href="#" class="icon-gplus margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Google Plus"></a></li>
+                                                        <li><a href="#" class="icon-linkedin margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Linkedin"></a></li>
+                                                        <li><a href="#" class="icon-pinterest margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Pinterest"></a></li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="label label-danger">Blocked </span></td>
+                                            </tr>
+                                            <tr class="active">
+                                                <td class="text-center"><img src="assets/images/male.png" alt=""
+                                                        width="20">
+                                                </td>
+                                                <td>Value 5</td>
+                                                <td>
+                                                    <div class="rating rating-4 size-13 width-100">
+                                                        <!-- rating-0 ... rating-5 -->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xxs margin-bottom-0">
+                                                        <div class="progress-bar progress-bar-success"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%; min-width: 2em;">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list-inline nomargin size-12">
+                                                        <li><a href="#" class="icon-facebook margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Facebook"></a></li>
+                                                        <li><a href="#" class="icon-twitter margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Twitter"></a></li>
+                                                        <li><a href="#" class="icon-gplus margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Google Plus"></a></li>
+                                                        <li><a href="#" class="icon-linkedin margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Linkedin"></a></li>
+                                                        <li><a href="#" class="icon-pinterest margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Pinterest"></a></li>
+                                                    </ul>
+                                                </td>
+                                                <td><span class="label label-primary">N/A </span></td>
+                                            </tr>
+                                            <tr>
+                                                <td class="text-center"><img src="assets/images/female.png" alt=""
+                                                        width="20"></td>
+                                                <td>Value 6</td>
+                                                <td>
+                                                    <div class="rating rating-5 size-13 width-100">
+                                                        <!-- rating-0 ... rating-5 -->
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <div class="progress progress-xxs margin-bottom-0">
+                                                        <div class="progress-bar progress-bar-default"
+                                                            role="progressbar" aria-valuenow="80" aria-valuemin="0"
+                                                            aria-valuemax="100" style="width: 80%; min-width: 2em;">
+                                                            <span class="sr-only">80% Complete</span>
+                                                        </div>
+                                                    </div>
+                                                </td>
+                                                <td>
+                                                    <ul class="list-inline nomargin size-12">
+                                                        <li><a href="#" class="icon-facebook margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Facebook"></a></li>
+                                                        <li><a href="#" class="icon-twitter margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Twitter"></a></li>
+                                                        <li><a href="#" class="icon-gplus margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Google Plus"></a></li>
+                                                        <li><a href="#" class="icon-linkedin margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Linkedin"></a></li>
+                                                        <li><a href="#" class="icon-pinterest margin-top-6"
+                                                                data-toggle="tooltip" data-placement="top"
+                                                                title="Pinterest"></a></li>
+                                                    </ul>
+                                                </td>
+                                                <td>
+                                                    <a href="#" class="btn btn-default btn-xs"><i
+                                                            class="fa fa-edit white"></i> Edit </a>
+                                                    <a href="#" class="btn btn-default btn-xs"><i
+                                                            class="fa fa-times white"></i> Delete </a>
+                                                </td>
+                                            </tr>
+                                        </tbody>
+                                    </table>
+                                </div>
+
+                            </div>
+                            <!-- /panel content -->
+
+                        </div>
+                        <!-- /PANEL -->
+
+
+
+
+
+
+                    </div>
+
+                    <!-- Edit -->
+                    <div id="edit" class="tab-pane" style="width: 100%;">
+
+                        <form class="form-horizontal" method="get">
+                            <h4>اطلاعات شخصی</h4>
+                            <fieldset>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'" for="profileFirstName">نام و
+                                        نام خانوادگی</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <input type="text" class="form-control" id="profileFirstName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'" for="profileLastName">نام
+                                        کاربری</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <input type="text" class="form-control" id="profileLastName">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'"
+                                        for="profileAddress">آدرس</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <input type="text" class="form-control pull-right" id="profileAddress">
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <hr />
+
+                            <h4>درباره</h4>
+                            <fieldset>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-xs-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'">نمایش عمومی پروفایل</label>
+                                    <div class="col-md-8">
+                                        <label class="checkbox">
+                                            <input type="checkbox" value="1" checked="checked" id="profilePublic">
+                                            <i></i> تایید کردن!
+                                        </label>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'"
+                                        for="profileBio">بیوگرافی</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <textarea class="form-control" rows="3" id="profileBio"></textarea>
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'" for="profileCompany">نام
+                                        نمایشی</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <input type="text" class="form-control" id="profileCompany">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div class="sky-form">
+                                        <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                        <label class="col-xs-3 control-label"
+                                            [class.pull-right]="translate.currentLang=='fa'">تصویر پروفایل</label>
+                                        <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                            [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                            <label for="file" class="input input-file">
+                                                <div class="button">
+                                                    <input type="file" id="file"
+                                                        onchange="this.parentNode.nextSibling.value = this.value">جستجو
+                                                </div>
+                                                <input type="text" readonly>
+                                            </label>
+                                            <a href="#" class="btn btn-danger btn-xs nomargin"><i
+                                                    class="fa fa-times"></i>
+                                                حذف تصویر انتخابی</a>
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </fieldset>
+
+                            <hr />
+
+                            <h4>تغییر گذرواژه</h4>
+                            <fieldset class="mb-xl">
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'" for="profileNewPassword">رمز
+                                        عبور جدید</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <input type="text" class="form-control" id="profileNewPassword">
+                                    </div>
+                                </div>
+                                <div class="form-group">
+                                    <div *ngIf="translate.currentLang=='fa'" class="col-md-1 pull-right"></div>
+                                    <label class="col-md-3 control-label"
+                                        [class.pull-right]="translate.currentLang=='fa'"
+                                        for="profileNewPasswordRepeat">تکرار رمز عبور
+                                        جدید</label>
+                                    <div class="col-md-7 col-xs-9" [class.pull-left]="translate.currentLang=='fa'"
+                                        [class.col-md-offset-1]="translate.currentLang=='fa'">
+                                        <input type="text" class="form-control" id="profileNewPasswordRepeat">
+                                    </div>
+                                </div>
+                            </fieldset>
+
+                            <div class="row" style="margin-top: 20px;">
+                                <div *ngIf="translate.currentLang=='fa'" class="col-md-2 pull-right"></div>
+                                <div class="col-md-8 col-md-offset-2 pull-left">
+                                    <button type="submit" style="margin: 0 10px;" class="btn btn-primary">ثبت
+                                        اطلاعات</button>
+                                    <button type="reset" class="btn btn-default">بازنشانی مشخصات</button>
+                                </div>
+                            </div>
+
+                        </form>
+
+                    </div>
+                </div>
             </div>
 
-        </section>
-        <!-- /projects -->
+        </div><!-- /COL 2 -->
 
-        <!-- activity -->
-        <section class="panel panel-default">
-            <header class="panel-heading">
-                <h2 class="panel-title elipsis">
-                    <i class="fa fa-rss"></i> تقویم کاربری
-                </h2>
-            </header>
+        <!-- COL 3 -->
+        <div class="col-md-12 col-lg-3" [class.pull-right]="translate.currentLang=='en'"
+            [class.pull-left]="translate.currentLang=='fa'">
 
-            <div class="panel-body noradius padding-10">
+            <!-- projects -->
+            <section class="panel panel-default">
+                <header class="panel-heading">
+                    <h2 class="panel-title elipsis">
+                        <i class="fa fa-rss"></i> پروژه های در دست انجام
+                    </h2>
+                </header>
 
-                <!-- activity list -->
-                <div class="row profile-activity">
+                <div class="panel-body noradius padding-10" [class.rtl_dir]="translate.currentLang=='fa'"
+                    [class.ltr_dir]="translate.currentLang=='en'">
 
-                    <!-- activity item -->
-                    <div class="col-xs-3 col-sm-2" [class.pull-right]="translate.currentLang=='fa'">
-                        <time datetime="2014-06-29" class="datebox">
-                            <strong>فروردین</strong>
-                            <span>1397</span>
-                        </time>
-                    </div>
-
-                    <div class="col-xs-9 col-sm-10">
-                        <h6><a href="page-sidebar.html">فعالیت لورم ایپسوم 1</a></h6>
-                        <p>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                        </p>
-                    </div>
-                    <!-- /activity item -->
-
-                    <div class="col-sm-12">
-                        <hr class="half-margins" />
-                    </div><!-- /activity separator -->
-
-                    <!-- activity item -->
-                    <div class="col-xs-3 col-sm-2" [class.pull-right]="translate.currentLang=='fa'">
-                        <time datetime="2014-06-29" class="datebox">
-                            <strong>تیرماه</strong>
-                            <span>1398</span>
-                        </time>
-                    </div>
-
-                    <div class="col-xs-9 col-sm-10">
-                        <h6><a href="page-sidebar.html">فعالیت لورم ایپسوم 2</a></h6>
-                        <p>
-                            لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک است.
-                            چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
-                            تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
-                        </p>
-                    </div>
-                    <!-- /activity item -->
-
-                    <div class="col-sm-12">
-                        <hr class="half-margins" />
-                    </div><!-- /activity separator -->
-
-                    <!-- paginatoin -->
-                    <div class="text-center">
-                        <ul class="pagination pagination-sm">
-                            <li class="disabled"><a href="#">بعدی</a></li>
-                            <li class="active"><a href="#">5</a></li>
-                            <li><a href="#">4</a></li>
-                            <li><a href="#">3</a></li>
-                            <li><a href="#">2</a></li>
-                            <li><a href="#">قبلی</a></li>
-                        </ul>
-                    </div>
-                    <!-- /paginatoin -->
+                    <ul>
+                        <li>
+                            <h3 style="margin-bottom: 10px;">فارسی سازی قالب HTML5</h3>
+                            <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با
+                                استفاده از طراحان گرافیک است. </span>
+                        </li>
+                        <li>
+                            <h3 style="margin-bottom: 10px; margin-top: 20px;">راست چین سازی قالب HTML5</h3>
+                            <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با
+                                استفاده از طراحان گرافیک است. </span>
+                        </li>
+                        <li>
+                            <h3 style="margin-bottom: 10px; margin-top: 20px;">ترجمه مقالات انگلیسی</h3>
+                            <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با
+                                استفاده از طراحان گرافیک است. </span>
+                        </li>
+                        <li>
+                            <h3 style="margin-bottom: 10px; margin-top: 20px;">طراحی یک بنر بزرگ</h3>
+                            <span class="text-gray size-12">لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و
+                                با
+                                استفاده از طراحان گرافیک است. </span>
+                        </li>
+                    </ul>
 
                 </div>
-                <!-- /activity list -->
 
-            </div>
-        </section>
-        <!-- /activity -->
+            </section>
+            <!-- /projects -->
 
-    </div><!-- /COL 3 -->
+            <!-- activity -->
+            <section class="panel panel-default">
+                <header class="panel-heading">
+                    <h2 class="panel-title elipsis">
+                        <i class="fa fa-rss"></i> تقویم کاربری
+                    </h2>
+                </header>
+
+                <div class="panel-body noradius padding-10">
+
+                    <!-- activity list -->
+                    <div class="row profile-activity">
+
+                        <!-- activity item -->
+                        <div class="col-xs-3 col-sm-2" [class.pull-right]="translate.currentLang=='fa'">
+                            <time datetime="2014-06-29" class="datebox">
+                                <strong>فروردین</strong>
+                                <span>1397</span>
+                            </time>
+                        </div>
+
+                        <div class="col-xs-9 col-sm-10">
+                            <h6><a href="page-sidebar.html">فعالیت لورم ایپسوم 1</a></h6>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                            </p>
+                        </div>
+                        <!-- /activity item -->
+
+                        <div class="col-sm-12">
+                            <hr class="half-margins" />
+                        </div><!-- /activity separator -->
+
+                        <!-- activity item -->
+                        <div class="col-xs-3 col-sm-2" [class.pull-right]="translate.currentLang=='fa'">
+                            <time datetime="2014-06-29" class="datebox">
+                                <strong>تیرماه</strong>
+                                <span>1398</span>
+                            </time>
+                        </div>
+
+                        <div class="col-xs-9 col-sm-10">
+                            <h6><a href="page-sidebar.html">فعالیت لورم ایپسوم 2</a></h6>
+                            <p>
+                                لورم ایپسوم متن ساختگی با تولید سادگی نامفهوم از صنعت چاپ و با استفاده از طراحان گرافیک
+                                است.
+                                چاپگرها و متون بلکه روزنامه و مجله در ستون و سطرآنچنان که لازم است و برای شرایط فعلی
+                                تکنولوژی مورد نیاز و کاربردهای متنوع با هدف بهبود ابزارهای کاربردی می باشد.
+                            </p>
+                        </div>
+                        <!-- /activity item -->
+
+                        <div class="col-sm-12">
+                            <hr class="half-margins" />
+                        </div><!-- /activity separator -->
+
+                        <!-- paginatoin -->
+                        <div class="text-center">
+                            <ul class="pagination pagination-sm">
+                                <li class="disabled"><a href="#">بعدی</a></li>
+                                <li class="active"><a href="#">5</a></li>
+                                <li><a href="#">4</a></li>
+                                <li><a href="#">3</a></li>
+                                <li><a href="#">2</a></li>
+                                <li><a href="#">قبلی</a></li>
+                            </ul>
+                        </div>
+                        <!-- /paginatoin -->
+
+                    </div>
+                    <!-- /activity list -->
+
+                </div>
+            </section>
+            <!-- /activity -->
+
+        </div><!-- /COL 3 -->
+
+    </div>
+
+
 
 </div>

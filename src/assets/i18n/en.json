@@ -33,9 +33,6 @@
     "signup_page_terms_popup_agree_button_text": "Agree",
 
 
-    "base_page_title": "Dashboard",
-
-
     "header_searchbar_placeholder": "Search...",
     "header_user_text": "user",
     "header_profile_button_text": "profile",
@@ -46,5 +43,7 @@
     "side_menu_user_options": "User",
     "side_menu_user_profile_item": "Profile",
     "side_menu_other_seperator": "Other",
-    "side_menu_exit_item": "Exit"
+    "side_menu_exit_item": "Exit",
+
+    "profile_page_title": "Profile"
 }

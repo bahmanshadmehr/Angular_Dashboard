@@ -33,9 +33,6 @@
     "signup_page_terms_popup_agree_button_text": "تایید",
 
 
-    "base_page_title": "داشبورد",
-
-
     "header_searchbar_placeholder": "جست و جو...",
     "header_user_text": "کاربر",
     "header_profile_button_text": "پروفایل",
@@ -46,5 +43,8 @@
     "side_menu_user_options": "اکانت کاربری",
     "side_menu_user_profile_item": "پروفایل",
     "side_menu_other_seperator": "سایر",
-    "side_menu_exit_item": "خروج"
+    "side_menu_exit_item": "خروج",
+
+
+    "profile_page_title": "پروفایل",
 }

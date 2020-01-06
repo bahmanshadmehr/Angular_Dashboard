@@ -9,9 +9,12 @@ import { SideMenuComponent } from '../side-menu/side-menu.component';
   encapsulation: ViewEncapsulation.None
 })
 export class BaseComponent implements OnInit {
-  constructor(public translate: TranslateService) { }
+
+  constructor(public translate: TranslateService) {
+  }
 
   ngOnInit() {
+    _toastr("Welcome! You have 24 new notifications and 3 new messages.", "top-left", "success", false);
   }
 
 }

@@ -23,23 +23,7 @@
             MIDDLE 
         -->
         <section id="middle" class="{{translate.currentLang=='fa' ? 'middleFa' : '' }}">
-
-
-            <!-- page title -->
-            <header id="page-header" [class.direction_rtl]="translate.currentLang=='fa'"
-                [class.direction_ltr]="translate.currentLang=='en'">
-                <h1>{{ 'base_page_title' | translate }}</h1>
-                <ol class="breadcrumb">
-                    <li class="active">{{ 'base_page_title' | translate }}</li>
-                </ol>
-            </header>
-            <!-- /page title -->
-
-
-            <div id="content" class="padding-20" [class.direction_rtl]="translate.currentLang=='fa'"
-                [class.direction_ltr]="translate.currentLang=='en'">
-                <router-outlet></router-outlet>
-            </div>
+            <router-outlet></router-outlet>
         </section>
         <!-- /MIDDLE -->
 
